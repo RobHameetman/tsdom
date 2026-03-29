@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // "rootDir": "./src",
+    "rootDir": "./",
+		"baseUrl": "./",
+    "outDir": "./dist",
+		"isolatedModules": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./test/resources/*"],
+      "@com.robhameetman/test": ["../test/src/*"],
+      "@com.robhameetman/utils": ["../utils/src/*"]
+    }
+  },
+	"files": ["./src/index.ts"],
+	"include": [
+		"./src",
+		"./test/resources",
+		"./typings/*.d.ts"
+	],
+	// "exclude": [
+	// 	"./src/**/*.spec.ts"
+	// ],
+	"references": [
+		{
+			"path": "../utils"
+		}
+	]
+}

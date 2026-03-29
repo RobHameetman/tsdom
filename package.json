@@ -1,0 +1,65 @@
+{
+	"name": "tsdom",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "Utility functions for robhameetman.com.",
+	"author": "Rob Hameetman <engineering@robhameetman.com>",
+	"homepage": "https://www.robhameetman.com",
+	"license": "UNLICENSED",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RobHameetman/tsdom.git"
+	},
+	"main": "./dist/index.js",
+	"module": "./src/index.ts",
+	"typings": "./dist/index.d.ts",
+	"scripts": {
+		"format": "eslint ./src/* --ext=ts --fix",
+		"reset": "NODE_ENV=production rm -rf ./dist && npm run build -- --force",
+		"test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" NODE_ENV=testing jest -co --watch --notify"
+	},
+	"jest": {
+		"roots": [
+			"<rootDir>/src",
+			"<rootDir>/test"
+		],
+		"collectCoverageFrom": [
+			"src/**/*.{ts,tsx}",
+			"!src/**/*.d.ts"
+		],
+		"coverageReporters": [
+			"text-summary"
+		],
+		"extensionsToTreatAsEsm": [
+			".ts"
+		],
+		"moduleDirectories": [
+			"node_modules",
+			"<rootDir>/../../packages"
+		],
+		"moduleFileExtensions": [
+			"js",
+			"ts"
+		],
+		"moduleNameMapper": {
+			"^@@/(.*)$": "<rootDir>/test/resources/$1"
+		},
+		"preset": "ts-jest",
+		"resolver": "<rootDir>/test/jest/config/resolver.ts",
+		"reporters": [
+			"default"
+		],
+		"testMatch": [
+			"<rootDir>/src/**/*.spec.{ts,tsx}"
+		],
+		"transform": {
+			"\\.ts$": [
+				"ts-jest",
+				{
+					"useESM": true,
+					"tsconfig": "<rootDir>/test/jest/config/tsconfig.json"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+		"rootDir": "../../../",
+		"noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./test/resources/*"],
+      "@com.robhameetman/test": ["../test/src/*"],
+      "@com.robhameetman/utils": ["../utils/src/*"]
+    }
+  },
+	"files": ["../../../src/index.ts"],
+	"include": [
+		"../../../src",
+		"../../../typings/*.d.ts",
+		"../../resources"
+	],
+	"references": [
+		{
+			"path": "../../../../utils"
+		}
+	]
+}
