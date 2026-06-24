@@ -1,5 +1,5 @@
 import { jest } from '@jest/globals';
-import overrideInNode from '@@/spies/misc/globalThisSpy';
+import overrideInNode from '#$/spies/misc/globalThisSpy';
 
 
 jest.unstable_mockModule('./associations/signal', () => ({

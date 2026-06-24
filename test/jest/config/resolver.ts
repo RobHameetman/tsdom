@@ -35,9 +35,5 @@ export const sync = (request: string, options: ResolverOptions) => {
     });
   }
 
-	// if (request.startsWith('@@/')) {
-	// 	return defaultResolver(path.join(rootDir as string, 'test', 'resources', request.slice(3)), options);
-	// }
-
   return defaultResolver(request, options);
 };

@@ -2,7 +2,7 @@
 	"name": "tsdom",
 	"type": "module",
 	"version": "1.0.0",
-	"description": "Utility functions for robhameetman.com.",
+	"description": "A modern TypeScript implementation of the WhatWG DOM spec",
 	"author": "Rob Hameetman <engineering@robhameetman.com>",
 	"homepage": "https://www.robhameetman.com",
 	"license": "UNLICENSED",
@@ -13,10 +13,18 @@
 	"main": "./dist/index.js",
 	"module": "./src/index.ts",
 	"typings": "./dist/index.d.ts",
+	"imports": {
+		"#$/*": "./test/resources/*",
+		"#*": "./src/*"
+	},
 	"scripts": {
 		"format": "eslint ./src/* --ext=ts --fix",
 		"reset": "NODE_ENV=production rm -rf ./dist && npm run build -- --force",
 		"test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" NODE_ENV=testing jest -co --watch --notify"
+	},
+	"devDependencies": {
+		"@types/node": "^22.19.0",
+		"typescript": "^6.0.3"
 	},
 	"jest": {
 		"roots": [
@@ -41,9 +49,6 @@
 			"js",
 			"ts"
 		],
-		"moduleNameMapper": {
-			"^@@/(.*)$": "<rootDir>/test/resources/$1"
-		},
 		"preset": "ts-jest",
 		"resolver": "<rootDir>/test/jest/config/resolver.ts",
 		"reporters": [
