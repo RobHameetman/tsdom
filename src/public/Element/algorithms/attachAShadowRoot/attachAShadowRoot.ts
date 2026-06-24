@@ -1,22 +1,22 @@
-import validCustomElementName from '@/algorithms/validCustomElementName';
-import validShadowHostName from '@/algorithms/validShadowHostName';
-import Namespace from '@/enums/Namespace';
-import { NotSupportedError } from '@/errors/NotSupportedError';
-import lookUpACustomElementDefinition from '@/public/CustomElementRegistry/algorithms/lookUpACustomElementDefinition';
-import { customElementStateOf } from '@/public/Element/associations/customElementState';
-import { setShadowRootOf } from '@/public/Element/associations/shadowRoot';
-import { isValueOf } from '@/public/Element/associations/isValue';
-import { setAvailableToElementInternalsOf } from '@/public/ShadowRoot/associations/availableToElementInternals';
-import { setClonableOf } from '@/public/ShadowRoot/associations/clonable';
-import { setCustomElementRegistryOf } from '@/public/ShadowRoot/associations/customElementRegistry';
-import { declarativeOf, setDeclarativeOf } from '@/public/ShadowRoot/associations/declarative';
-import { initializeNodeDocumentOf } from '@/public/Node/associations/nodeDocument';
-import { initializeModeOf } from '@/public/ShadowRoot/associations/mode';
-import { setDelegatesFocusOf } from '@/public/ShadowRoot/associations/delegatesFocus';
-import { setSerializableOf } from '@/public/ShadowRoot/associations/serializable';
-import { setSlotAssignmentOf } from '@/public/ShadowRoot/associations/slotAssignment';
-import { isShadowHost } from '@/tree/ShadowTree/relationships/shadowRoots';
-import { attach } from '@/tree/Tree/relationships/hosts';
+import validCustomElementName from '#algorithms/validCustomElementName';
+import validShadowHostName from '#algorithms/validShadowHostName';
+import Namespace from '#enums/Namespace';
+import { NotSupportedError } from '#errors/NotSupportedError';
+import lookUpACustomElementDefinition from '#public/CustomElementRegistry/algorithms/lookUpACustomElementDefinition';
+import { customElementStateOf } from '#public/Element/associations/customElementState';
+import { setShadowRootOf } from '#public/Element/associations/shadowRoot';
+import { isValueOf } from '#public/Element/associations/isValue';
+import { setAvailableToElementInternalsOf } from '#public/ShadowRoot/associations/availableToElementInternals';
+import { setClonableOf } from '#public/ShadowRoot/associations/clonable';
+import { setCustomElementRegistryOf } from '#public/ShadowRoot/associations/customElementRegistry';
+import { declarativeOf, setDeclarativeOf } from '#public/ShadowRoot/associations/declarative';
+import { initializeNodeDocumentOf } from '#public/Node/associations/nodeDocument';
+import { initializeModeOf } from '#public/ShadowRoot/associations/mode';
+import { setDelegatesFocusOf } from '#public/ShadowRoot/associations/delegatesFocus';
+import { setSerializableOf } from '#public/ShadowRoot/associations/serializable';
+import { setSlotAssignmentOf } from '#public/ShadowRoot/associations/slotAssignment';
+import { isShadowHost } from '#tree/ShadowTree/relationships/shadowRoots';
+import { attach } from '#tree/Tree/relationships/hosts';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-attach-a-shadow-root

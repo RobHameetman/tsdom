@@ -1,8 +1,8 @@
-import IndexSizeError from '@/errors/IndexSizeError';
-import { liveRangesOf } from '@/tree/Tree/associations/liveRanges';
-import lengthOf from '@/tree/NodeTree/algorithms/length';
-import queueAMutationRecord from '@/public/MutationRecord/algorithms/queueAMutationRecord';
-import { insertDataOf, removeDataFrom } from '@/public/CharacterData/associations/data';
+import IndexSizeError from '#errors/IndexSizeError';
+import { liveRangesOf } from '#tree/Tree/associations/liveRanges';
+import lengthOf from '#tree/NodeTree/algorithms/length';
+import queueAMutationRecord from '#public/MutationRecord/algorithms/queueAMutationRecord';
+import { insertDataOf, removeDataFrom } from '#public/CharacterData/associations/data';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-cd-replace

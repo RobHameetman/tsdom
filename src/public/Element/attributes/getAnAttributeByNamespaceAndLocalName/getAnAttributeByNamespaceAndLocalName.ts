@@ -1,4 +1,4 @@
-import { attributeListOf } from '@/public/Element/associations/attributeList';
+import { attributeListOf } from '#public/Element/associations/attributeList';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-get-by-namespace

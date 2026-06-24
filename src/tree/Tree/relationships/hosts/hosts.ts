@@ -1,8 +1,8 @@
-import type { Tree } from '@/tree/Tree';
-import OrderedSet from '@/infra/OrderedSet';
-import { parentOf } from '@/tree/Tree/relationships/parents';
-import { childrenOf, descendantsOf } from '@/tree/Tree/relationships/children';
-import { isRoot, rootOf } from '@/tree/Tree/relationships/roots';
+import type { Tree } from '#tree/Tree';
+import OrderedSet from '#infra/OrderedSet';
+import { parentOf } from '#tree/Tree/relationships/parents';
+import { childrenOf, descendantsOf } from '#tree/Tree/relationships/children';
+import { isRoot, rootOf } from '#tree/Tree/relationships/roots';
 
 /**
  * An object A hosting object B is a host of B. An object may be hosted by

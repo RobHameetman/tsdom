@@ -1,4 +1,4 @@
-import { isString } from '@com.robhameetman/utils';
+import isString from '#_internals/utils/functions/isString';
 
 /**
  * A list of all possible {@link DomNodeType} values.

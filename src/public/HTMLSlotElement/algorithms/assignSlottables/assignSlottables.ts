@@ -1,6 +1,6 @@
-import assignedNodes from '@/public/HTMLSlotElement/associations/assignedNodes';
-import assignedSlot from '@/nodes/mixins/Slottable/associations/assignedSlot';
-import findSlottables from '@/public/HTMLSlotElement/algorithms/findSlottables';
+import assignedNodes from '#public/HTMLSlotElement/associations/assignedNodes';
+import assignedSlot from '#nodes/mixins/Slottable/associations/assignedSlot';
+import findSlottables from '#public/HTMLSlotElement/algorithms/findSlottables';
 
 /**
  * @see https://dom.spec.whatwg.org/#find-a-slot

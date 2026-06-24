@@ -1,9 +1,10 @@
-import { DomNodeNamespace, isUndefined, noop } from '@com.robhameetman/utils';
-// import implOf from '@/_internals/impl';
-import type { Slot } from '@/tree/ShadowTree/types/Slot'
-import HTMLElement from '@/public/HTMLElement';
-import manuallyAssignedNodes from '@/public/HTMLSlotElement/associations/manuallyAssignedNodes';
-import manuallyAssignedSlot from '@/mixins/Slottable/associations/manuallyAssignedSlot';
+import isUndefined from '#_internals/utils/functions/isUndefined';
+import noop from '#_internals/utils/functions/noop';
+// import implOf from '#_internals/impl';
+import type { Slot } from '#tree/ShadowTree/types/Slot'
+import HTMLElement from '#public/HTMLElement';
+import manuallyAssignedNodes from '#public/HTMLSlotElement/associations/manuallyAssignedNodes';
+import manuallyAssignedSlot from '#mixins/Slottable/associations/manuallyAssignedSlot';
 
 // export type Slot = HTMLSlotElement;
 

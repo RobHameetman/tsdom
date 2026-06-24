@@ -1,5 +1,5 @@
-import implOf from '@/_internals/impl';
-import { dataOf, initializeDataOf } from '@/security/TrustedScript/associations/data';
+import implOf from '#_internals/impl';
+import { dataOf, initializeDataOf } from '#security/TrustedScript/associations/data';
 
 /**
  * The {@link TrustedScript} interface represents a string that a developer can

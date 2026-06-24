@@ -1,5 +1,6 @@
-import { isObject, isUndefined } from '@com.robhameetman/utils';
-import DomNodeType, { isDomNodeType } from '@/enums/DomNodeType';
+import isObject from '#_internals/utils/functions/isObject';
+import isUndefined from '#_internals/utils/functions/isUndefined';
+import DomNodeType, { isDomNodeType } from '#enums/DomNodeType';
 
 export const NonElementParentNode = <T extends Node = Node>(prototype: T) =>
 	Object.defineProperties(prototype, {

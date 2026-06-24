@@ -1,5 +1,5 @@
-import type { TrustedHTML } from '@/_internals/types/TrustedHTML';
-import type { DOMString } from '@/webidl/DOMString';
+import type { TrustedHTML } from '#_internals/types/TrustedHTML';
+import type { DOMString } from '#webidl/DOMString';
 
 /**
  * @see https://w3c.github.io/trusted-types/dist/spec/#trustedhtml-data

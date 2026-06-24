@@ -1,6 +1,6 @@
-import { isShadowRoot } from '@/webcomponents/ShadowRoot';
-import isDescendantOf from '@/nodes/mixins/ChildNode/algorithms/isDescendantOf';
-import isShadowIncludingInclusiveDescendantOf from '@/webcomponents/ShadowRoot/algorithms/isShadowIncludingInclusiveDescendantOf';
+import { isShadowRoot } from '#webcomponents/ShadowRoot';
+import isDescendantOf from '#nodes/mixins/ChildNode/algorithms/isDescendantOf';
+import isShadowIncludingInclusiveDescendantOf from '#webcomponents/ShadowRoot/algorithms/isShadowIncludingInclusiveDescendantOf';
 
 /**
  * Checks whether a given node is a shadow-including descendant of another node.

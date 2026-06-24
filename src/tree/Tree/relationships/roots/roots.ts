@@ -1,5 +1,5 @@
-import type { Tree } from '@/tree/Tree';
-import { parentOf } from '@/tree/Tree/relationships/parents';
+import type { Tree } from '#tree/Tree';
+import { parentOf } from '#tree/Tree/relationships/parents';
 
 export type Roots<T extends object = object> = ReadonlyArray<T>;
 

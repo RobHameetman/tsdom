@@ -1,5 +1,5 @@
-import filter from '@/public/TreeWalker/algorithms/filter';
-import { isTreeWalkersRoot } from '@/public/TreeWalker/associations/root';
+import filter from '#public/TreeWalker/algorithms/filter';
+import { isTreeWalkersRoot } from '#public/TreeWalker/associations/root';
 
 export type ChildrenTraversal = 'first' | 'last';
 

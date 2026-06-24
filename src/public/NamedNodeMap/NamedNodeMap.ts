@@ -1,4 +1,4 @@
-import { isNumber, isType, isUndefined } from '@com.robhameetman/utils';
+import isNumber from '#_internals/utils/functions/isNumber';
 
 export const NamedNodeMap = function(
 	this: NamedNodeMap,
@@ -179,20 +179,17 @@ NamedNodeMap.prototype = Object.create(Object.prototype, {
 });
 
 /**
- * Checks that an `unknown` value is a {@link NodeList}.
+ * Checks that an `unknown` value is a {@link NamedNodeMap}.
  *
  * Requirements:
- *   - `value` must be a valid instance of `NodeList` or an object whose values are `Node`s.
+ *   - `value` must be a valid instance of `NamedNodeMap` or an object whose values are `Node`s.
  *
  * @param value - An `unknown` value.
  *
- * @returns The determination that `value` is or is not a {@link NodeList}.
+ * @returns The determination that `value` is or is not a {@link NamedNodeMap}.
  */
 export const isNamedNodeMap = (value: unknown): value is NamedNodeMap =>
-	/**
-	 * value
-	 */
-	(!isUndefined(window) && value instanceof NamedNodeMap) ||
-	isType<NamedNodeMap>('NamedNodeMap', value);
+	typeof globalThis.NamedNodeMap !== 'undefined' &&
+	value instanceof globalThis.NamedNodeMap;
 
 export default NamedNodeMap;

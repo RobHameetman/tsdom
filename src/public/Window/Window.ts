@@ -1,11 +1,11 @@
-import AnimationFrameProvider, { asAnimationFrameProvider } from '@/mixins/AnimationFrameProvider';
-import WindowOrWorkerGlobalScope, { asWindowOrWorkerGlobalScope } from '@/mixins/WindowOrWorkerGlobalScope';
-import GlobalEventHandlers, { asGlobalEventHandlers } from '@/mixins/GlobalEventHandlers';
-import WindowEventHandlers, { asWindowEventHandlers } from '@/mixins/WindowEventHandlers';
-import WindowProperties from '@/public/WindowProperties';
-import WindowLocalStorage, { asWindowLocalStorage } from '@/mixins/WindowLocalStorage';
-import WindowSessionStorage, { asWindowSessionStorage } from '@/mixins/WindowSessionStorage';
-import { document } from '@/public/Window/associations/document';
+import AnimationFrameProvider, { asAnimationFrameProvider } from '#mixins/AnimationFrameProvider';
+import WindowOrWorkerGlobalScope, { asWindowOrWorkerGlobalScope } from '#mixins/WindowOrWorkerGlobalScope';
+import GlobalEventHandlers, { asGlobalEventHandlers } from '#mixins/GlobalEventHandlers';
+import WindowEventHandlers, { asWindowEventHandlers } from '#mixins/WindowEventHandlers';
+import WindowProperties from '#public/WindowProperties';
+import WindowLocalStorage, { asWindowLocalStorage } from '#mixins/WindowLocalStorage';
+import WindowSessionStorage, { asWindowSessionStorage } from '#mixins/WindowSessionStorage';
+import { document } from '#public/Window/associations/document';
 
 const withMixins = (
 	prototype: Window

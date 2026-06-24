@@ -1,23 +1,23 @@
-import List from '@/infra/List';
-import { rootOf } from '@/tree/Tree/relationships/roots';
-import { isShadowIncludingInclusiveAncestorOf, shadowRootOf } from '@/tree/ShadowTree/relationships/shadowRoots';
-import type { Slot } from '@/tree/ShadowTree/types/Slot';
-import { EventFlag, setFlagsOf, isFlagSetFor, isFlagUnsetFor, unsetFlagsOf } from '@/public/Event/associations/flags';
-import { type Path, pathOf, setPathToEmptyListFor } from '@/public/Event/associations/path';
-import { relatedTargetOf, setRelatedTargetToNullFor } from '@/public/Event/associations/relatedTarget';
-import { initializeTargetToNullFor } from '@/public/Event/associations/target';
-import { setTouchTargetsToEmptyListFor, touchTargetListFor } from '@/public/Event/associations/touchTargetList';
-import { setCurrentTargetToNullFor } from '@/public/Event/attributes/currentTarget';
-import { setPhaseToAtTarget, setPhaseToBubbling, setPhaseToCapturing, setPhaseToNone } from '@/public/Event/attributes/eventPhase';
-import type { PotentialEventTarget } from '@/public/EventTarget';
-import appendToAnEventPath from '@/public/EventTarget/algorithms/appendToAnEventPath';
-import invoke from '@/public/EventTarget/algorithms/invoke';
-import { hasActivationBehavior, runActivationBehaviorOf } from '@/public/EventTarget/associations/activationBehavior';
-import { hasLegacyCanceledActivationBehavior, runLegacyCanceledActivationBehaviorOf } from '@/public/EventTarget/associations/legacyCanceledActivationBehavior';
-import { hasLegacyPreActivationBehavior, runLegacyPreActivationBehaviorOf } from '@/public/EventTarget/associations/legacyPreActivationBehavior';
-import { invokeGetTheParentOf } from '@/public/EventTarget/associations/getTheParent';
-import { isAssignedSlottable } from '@/mixins/Slottable';
-import retarget from '@/public/ShadowRoot/algorithms/retarget';
+import List from '#infra/List';
+import { rootOf } from '#tree/Tree/relationships/roots';
+import { isShadowIncludingInclusiveAncestorOf, shadowRootOf } from '#tree/ShadowTree/relationships/shadowRoots';
+import type { Slot } from '#tree/ShadowTree/types/Slot';
+import { EventFlag, setFlagsOf, isFlagSetFor, isFlagUnsetFor, unsetFlagsOf } from '#public/Event/associations/flags';
+import { type Path, pathOf, setPathToEmptyListFor } from '#public/Event/associations/path';
+import { relatedTargetOf, setRelatedTargetToNullFor } from '#public/Event/associations/relatedTarget';
+import { initializeTargetToNullFor } from '#public/Event/associations/target';
+import { setTouchTargetsToEmptyListFor, touchTargetListFor } from '#public/Event/associations/touchTargetList';
+import { setCurrentTargetToNullFor } from '#public/Event/attributes/currentTarget';
+import { setPhaseToAtTarget, setPhaseToBubbling, setPhaseToCapturing, setPhaseToNone } from '#public/Event/attributes/eventPhase';
+import type { PotentialEventTarget } from '#public/EventTarget';
+import appendToAnEventPath from '#public/EventTarget/algorithms/appendToAnEventPath';
+import invoke from '#public/EventTarget/algorithms/invoke';
+import { hasActivationBehavior, runActivationBehaviorOf } from '#public/EventTarget/associations/activationBehavior';
+import { hasLegacyCanceledActivationBehavior, runLegacyCanceledActivationBehaviorOf } from '#public/EventTarget/associations/legacyCanceledActivationBehavior';
+import { hasLegacyPreActivationBehavior, runLegacyPreActivationBehaviorOf } from '#public/EventTarget/associations/legacyPreActivationBehavior';
+import { invokeGetTheParentOf } from '#public/EventTarget/associations/getTheParent';
+import { isAssignedSlottable } from '#mixins/Slottable';
+import retarget from '#public/ShadowRoot/algorithms/retarget';
 
 /**
  * @see https://dom.spec.whatwg.org/#remove-all-event-listeners

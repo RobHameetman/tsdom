@@ -1,10 +1,10 @@
-// import implOf from '@/_internals/impl';
-import DomNodeType from '@/enums/DomNodeType';
-import Slottable, { isSlottable } from '@/mixins/Slottable';
-import { setGetTheParentOf } from '@/public/EventTarget/associations/getTheParent';
-import CharacterData from '@/public/CharacterData';
-import { disposeDataOf, setDataOf } from '@/public/CharacterData/associations/data';
-import { initializeNodeDocumentOf } from '@/public/Node/associations/nodeDocument';
+// import implOf from '#_internals/impl';
+import DomNodeType from '#enums/DomNodeType';
+import Slottable, { isSlottable } from '#mixins/Slottable';
+import { setGetTheParentOf } from '#public/EventTarget/associations/getTheParent';
+import CharacterData from '#public/CharacterData';
+import { disposeDataOf, setDataOf } from '#public/CharacterData/associations/data';
+import { initializeNodeDocumentOf } from '#public/Node/associations/nodeDocument';
 
 const withMixins = (prototype: Text) =>
 	Slottable(prototype);

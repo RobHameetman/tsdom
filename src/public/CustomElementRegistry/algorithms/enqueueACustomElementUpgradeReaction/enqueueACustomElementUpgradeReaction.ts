@@ -1,5 +1,5 @@
-import { type CustomElementDefinition } from '@/public/Element/associations/customElementDefinition';
-import enqueueAnElementOnTheAppropriateElementQueue from '@/public/CustomElementRegistry/algorithms/enqueueAnElementOnTheAppropriateElementQueue';
+import { type CustomElementDefinition } from '#public/Element/associations/customElementDefinition';
+import enqueueAnElementOnTheAppropriateElementQueue from '#public/CustomElementRegistry/algorithms/enqueueAnElementOnTheAppropriateElementQueue';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-upgrade-reaction

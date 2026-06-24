@@ -1,5 +1,5 @@
-import OrderedSet from '@/infra/OrderedSet';
-import type { CustomElementDefinition } from '@/public/Element/associations/customElementDefinition';
+import OrderedSet from '#infra/OrderedSet';
+import type { CustomElementDefinition } from '#public/Element/associations/customElementDefinition';
 import { disposeCustomElementDefinitionOf } from '../../../Element/associations/customElementDefinition/customElementDefinition';
 
 /**

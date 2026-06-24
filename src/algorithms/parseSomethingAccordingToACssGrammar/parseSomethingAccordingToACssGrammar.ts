@@ -1,9 +1,9 @@
-import InvalidCharacterError from '@/errors/InvalidCharacterError';
-import NamespaceError from '@/errors/NamespaceError';
-import Namespace from '@/enums/Namespace';
-import validNamespacePrefix from '@/algorithms/validNamespacePrefix';
-import validAttributeLocalName from '@/public/Attr/algorithms/validAttributeLocalName';
-import validElementLocalName from '@/public/Element/algorithms/validElementLocalName';
+import InvalidCharacterError from '#errors/InvalidCharacterError';
+import NamespaceError from '#errors/NamespaceError';
+import Namespace from '#enums/Namespace';
+import validNamespacePrefix from '#algorithms/validNamespacePrefix';
+import validAttributeLocalName from '#public/Attr/algorithms/validAttributeLocalName';
+import validElementLocalName from '#public/Element/algorithms/validElementLocalName';
 
 export type ValidateAndExtractContext = 'element' | 'attribute';
 

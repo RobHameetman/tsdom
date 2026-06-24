@@ -1,14 +1,15 @@
-import { isFunction, noop } from '@com.robhameetman/utils';
-import { InvalidStateError } from '@/errors/InvalidStateError';
-import { EventFlag, isFlagSetFor, isFlagUnsetFor } from '@/public/Event/associations/flags';
-import { type Listener, eventListenerListFor } from '@/public/EventTarget/associations/eventListenerList';
-import dispatch from '@/public/EventTarget/algorithms/dispatch';
-import addAnEventListener from '@/public/EventTarget/algorithms/addAnEventListener';
-import removeAnEventListener from '@/public/EventTarget/algorithms/removeAnEventListener';
-import eraseAllEventListenersAndHandlers from '@/public/EventTarget/algorithms/eraseAllEventListenersAndHandlers';
-import { setIsTrustedToFalseFor } from '@/public/Event/attributes/isTrusted';
-import flattenOptions from '@/public/EventTarget/algorithms/flattenOptions';
-import flattenMoreOptions from '@/public/EventTarget/algorithms/flattenMoreOptions';
+import isFunction from '#_internals/utils/functions/isFunction';
+import noop from '#_internals/utils/functions/noop';
+import { InvalidStateError } from '#errors/InvalidStateError';
+import { EventFlag, isFlagSetFor, isFlagUnsetFor } from '#public/Event/associations/flags';
+import { type Listener, eventListenerListFor } from '#public/EventTarget/associations/eventListenerList';
+import dispatch from '#public/EventTarget/algorithms/dispatch';
+import addAnEventListener from '#public/EventTarget/algorithms/addAnEventListener';
+import removeAnEventListener from '#public/EventTarget/algorithms/removeAnEventListener';
+import eraseAllEventListenersAndHandlers from '#public/EventTarget/algorithms/eraseAllEventListenersAndHandlers';
+import { setIsTrustedToFalseFor } from '#public/Event/attributes/isTrusted';
+import flattenOptions from '#public/EventTarget/algorithms/flattenOptions';
+import flattenMoreOptions from '#public/EventTarget/algorithms/flattenMoreOptions';
 
 /**
  * @see https://dom.spec.whatwg.org/#potential-event-target

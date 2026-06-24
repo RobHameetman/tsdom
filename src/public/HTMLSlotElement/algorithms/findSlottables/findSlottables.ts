@@ -1,7 +1,7 @@
-import List from '@/infra/List';
-import manuallyAssignedNodes, { type ManuallyAssignedNodes } from '@/public/HTMLSlotElement/associations/manuallyAssignedNodes';
-import { type Slottables, isSlottable } from '@/nodes/mixins/Slottable';
-import findASlot from '@/nodes/mixins/Slottable/algorithms/findASlot';
+import List from '#infra/List';
+import manuallyAssignedNodes, { type ManuallyAssignedNodes } from '#public/HTMLSlotElement/associations/manuallyAssignedNodes';
+import { type Slottables, isSlottable } from '#nodes/mixins/Slottable';
+import findASlot from '#nodes/mixins/Slottable/algorithms/findASlot';
 
 /**
  * @see https://dom.spec.whatwg.org/#find-slotables

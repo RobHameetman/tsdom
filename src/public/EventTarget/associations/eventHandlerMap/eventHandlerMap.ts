@@ -1,4 +1,4 @@
-import type { Listener } from '@/public/EventTarget/associations/eventListenerList';
+import type { Listener } from '#public/EventTarget/associations/eventListenerList';
 /**
  * Each {@link EventTarget} object can have an associated activation behavior
  * algorithm. {@link Node}s, This exists because user agents perform certain

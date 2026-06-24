@@ -1,4 +1,4 @@
-import Namespace from '@/enums/Namespace';
+import Namespace from '#enums/Namespace';
 
 export type TrustedTypeData = [typeof Element, string | null, string, TrustedType, string];
 

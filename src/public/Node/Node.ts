@@ -1,23 +1,23 @@
-// import implOf from '@/_internals/impl';
-import type { Tree } from '@/tree/Tree';
-import DomNodeType from '@/enums/DomNodeType';
-import HierarchyRequestError from '@/errors/HierarchyRequestError';
-import { isSlottable } from '@/mixins/Slottable';
-import NodeListOf from '@/public/NodeList';
-import EventTarget from '@/public/EventTarget';
-import { setGetTheParentOf } from '@/public/EventTarget/associations/getTheParent';
-import { documentTreeOf } from '@/public/Document/associations/documentTree';
-import { type NodeDocument, disposeNodeDocumentOf, initializeNodeDocumentOf, nodeDocumentOf } from '@/public/Node/associations/nodeDocument';
-import isConnected from '@/public/ShadowRoot/algorithms/isConnected';
-import { childrenOf, firstChildOf, hasChildren, lastChildOf } from '@/tree/Tree/relationships';
-import { nextSiblingOf, previousSiblingOf } from '@/tree/Tree/relationships/siblings';
-import { parentOf, rootOf } from '@/tree/Tree/relationships/parents';
-import { length } from '@/tree/NodeTree/algorithms/length';
-import { setValueOf } from '@/public/Attr/associations/value';
-import replaceData from '@/public/CharacterData/algorithms/replaceData';
-import { shadowIncludingRootOf } from '@/tree/ShadowTree';
+// import implOf from '#_internals/impl';
+import type { Tree } from '#tree/Tree';
+import DomNodeType from '#enums/DomNodeType';
+import HierarchyRequestError from '#errors/HierarchyRequestError';
+import { isSlottable } from '#mixins/Slottable';
+import NodeListOf from '#public/NodeList';
+import EventTarget from '#public/EventTarget';
+import { setGetTheParentOf } from '#public/EventTarget/associations/getTheParent';
+import { documentTreeOf } from '#public/Document/associations/documentTree';
+import { type NodeDocument, disposeNodeDocumentOf, initializeNodeDocumentOf, nodeDocumentOf } from '#public/Node/associations/nodeDocument';
+import isConnected from '#public/ShadowRoot/algorithms/isConnected';
+import { childrenOf, firstChildOf, hasChildren, lastChildOf } from '#tree/Tree/relationships';
+import { nextSiblingOf, previousSiblingOf } from '#tree/Tree/relationships/siblings';
+import { parentOf, rootOf } from '#tree/Tree/relationships/parents';
+import { length } from '#tree/NodeTree/algorithms/length';
+import { setValueOf } from '#public/Attr/associations/value';
+import replaceData from '#public/CharacterData/algorithms/replaceData';
+import { shadowIncludingRootOf } from '#tree/ShadowTree';
 import equals from './algorithms/equals';
-import { qualifiedNameOf } from '@/public/Attr/associations/qualifiedName';
+import { qualifiedNameOf } from '#public/Attr/associations/qualifiedName';
 
 /**
  * The DOM **`Node`** interface is an abstract base class upon which many other

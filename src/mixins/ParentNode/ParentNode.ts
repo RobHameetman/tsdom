@@ -1,6 +1,7 @@
-import { isObject, isUndefined } from '@com.robhameetman/utils';
-import DomNodeType, { isDomNodeType } from '@/enums/DomNodeType';
-import Node from '@/public/Node';
+import isObject from '#_internals/utils/functions/isObject';
+import isUndefined from '#_internals/utils/functions/isUndefined';
+import DomNodeType, { isDomNodeType } from '#enums/DomNodeType';
+import Node from '#public/Node';
 
 /**
  * @TODO - move this somewhere else

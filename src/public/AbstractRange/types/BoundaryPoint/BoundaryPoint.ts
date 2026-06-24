@@ -1,8 +1,8 @@
-import { isNumber } from '@com.robhameetman/utils';
-import List from '@/infra/List';
-import OrderedSet from '@/infra/OrderedSet';
-import Stack from '@/infra/Stack';
-import Queue from '@/infra/Queue';
+import isNumber from '#_internals/utils/functions/isNumber';
+import List from '#infra/List';
+import OrderedSet from '#infra/OrderedSet';
+import Stack from '#infra/Stack';
+import Queue from '#infra/Queue';
 
 export type BoundaryPoint = [Node, number];
 

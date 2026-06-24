@@ -1,5 +1,5 @@
-import NotFoundError from '@/errors/NotFoundError';
-import remove from '@/tree/NodeTree/algorithms/remove';
+import NotFoundError from '#errors/NotFoundError';
+import remove from '#tree/NodeTree/algorithms/remove';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-node-pre-remove

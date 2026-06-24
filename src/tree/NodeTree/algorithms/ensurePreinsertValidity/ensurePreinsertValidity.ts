@@ -1,9 +1,9 @@
-import HierarchyRequestError from '@/errors/HierarchyRequestError';
-import NotFoundError from '@/errors/NotFoundError';
-import Tree from '@/tree/Tree';
-import { childrenOf } from '@/tree/Tree/relationships/children';
-import { isParentOf } from '@/tree/Tree/relationships/parents';
-import { isHostIncludingInclusiveAncestorOf } from '@/tree/Tree/relationships/hosts';
+import HierarchyRequestError from '#errors/HierarchyRequestError';
+import NotFoundError from '#errors/NotFoundError';
+import Tree from '#tree/Tree';
+import { childrenOf } from '#tree/Tree/relationships/children';
+import { isParentOf } from '#tree/Tree/relationships/parents';
+import { isHostIncludingInclusiveAncestorOf } from '#tree/Tree/relationships/hosts';
 
 const isDocumentOrFragmentOrElement = (node: Node) =>
 	node instanceof Document ||

@@ -1,6 +1,6 @@
-import { isAttr } from '@/public/Attr';
-import { isCharacterData } from '@/public/CharacterData';
-import { isDocumentType } from '@/public/DocumentType';
+import { isAttr } from '#public/Attr';
+import { isCharacterData } from '#public/CharacterData';
+import { isDocumentType } from '#public/DocumentType';
 
 /**
  * Determines the length of a node. If a node is a {@link DocumentType} or an

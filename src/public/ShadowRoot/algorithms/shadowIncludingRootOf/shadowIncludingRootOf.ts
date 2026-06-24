@@ -1,5 +1,5 @@
-import { rootOf } from '@/tree/Tree/relationships/parents';
-import { isShadowRoot } from '@/public/ShadowRoot';
+import { rootOf } from '#tree/Tree/relationships/parents';
+import { isShadowRoot } from '#public/ShadowRoot';
 
 /**
  * The shadow-including root of an object is its root’s host’s shadow-including

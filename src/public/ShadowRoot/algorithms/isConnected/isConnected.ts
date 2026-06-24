@@ -1,4 +1,4 @@
-import { shadowIncludingRootOf } from '@/tree/ShadowTree/relationships/shadowRoots';
+import { shadowIncludingRootOf } from '#tree/ShadowTree/relationships/shadowRoots';
 
 /**
  * Checks if a node is connected to the document.

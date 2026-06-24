@@ -1,4 +1,4 @@
-import EventTarget from '@/public/EventTarget';
+import EventTarget from '#public/EventTarget';
 
 export const Performance = function(this: Performance) {
 	throw new TypeError('Failed to construct \'Performance\': Illegal constructor');

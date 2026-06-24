@@ -1,5 +1,5 @@
-import aborted from '@/public/AbortSignal/algorithms/aborted';
-import { type AbortAlgorithm, abortAlgorithmsOf } from '@/abort/AbortSignal/associations/abortAlgorithm';
+import aborted from '#public/AbortSignal/algorithms/aborted';
+import { type AbortAlgorithm, abortAlgorithmsOf } from '#abort/AbortSignal/associations/abortAlgorithm';
 
 /**
  * Add an algorithm to an {@link AbortSignal}.

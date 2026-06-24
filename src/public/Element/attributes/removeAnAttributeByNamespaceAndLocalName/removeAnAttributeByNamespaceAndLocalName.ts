@@ -1,5 +1,5 @@
-import getAnAttributeByNamespaceAndLocalName from '@/public/Element/attributes/getAnAttributeByNamespaceAndLocalName';
-import remove from '@/public/Element/attributes/remove';
+import getAnAttributeByNamespaceAndLocalName from '#public/Element/attributes/getAnAttributeByNamespaceAndLocalName';
+import remove from '#public/Element/attributes/remove';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-remove-by-namespace

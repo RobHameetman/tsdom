@@ -1,4 +1,4 @@
-import List from '@/infra/List';
+import List from '#infra/List';
 
 /**
  * A {@link RegisteredObserver} consists of an observer (a

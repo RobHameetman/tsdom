@@ -1,8 +1,8 @@
-import type List from '@/infra/List';
-import reportAnException from '@/algorithms/reportAnException';
-import { EventFlag, isFlagSetFor, setFlagsOf, unsetFlagsOf } from '@/public/Event/associations/flags';
-import type { Listener } from '@/public/EventTarget/associations/eventListenerList';
-import removeAnEventListener from '@/public/EventTarget/algorithms/removeAnEventListener';
+import type List from '#infra/List';
+import reportAnException from '#algorithms/reportAnException';
+import { EventFlag, isFlagSetFor, setFlagsOf, unsetFlagsOf } from '#public/Event/associations/flags';
+import type { Listener } from '#public/EventTarget/associations/eventListenerList';
+import removeAnEventListener from '#public/EventTarget/algorithms/removeAnEventListener';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-event-listener-inner-invoke

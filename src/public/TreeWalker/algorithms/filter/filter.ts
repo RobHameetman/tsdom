@@ -1,6 +1,6 @@
-import InvalidStateError from '@/errors/InvalidStateError';
-import { isActiveIsTrueFor, setIsActiveToTrueFor, setIsActiveToFalseFor } from '@/public/TreeWalker/associations/isActive';
-import { filterOf } from '@/public/TreeWalker/associations/filter';
+import InvalidStateError from '#errors/InvalidStateError';
+import { isActiveIsTrueFor, setIsActiveToTrueFor, setIsActiveToFalseFor } from '#public/TreeWalker/associations/isActive';
+import { filterOf } from '#public/TreeWalker/associations/filter';
 
 /**
  * Gets the root of a live {@link Range}.

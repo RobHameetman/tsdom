@@ -1,4 +1,4 @@
-import Slottable from '@/mixins/Slottable';
+import Slottable from '#mixins/Slottable';
 
 // export const CDATA_SECTION_CONSTRUCTOR_KEY = Symbol('TSDom:Constructor:CDATASection');
 

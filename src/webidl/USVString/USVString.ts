@@ -1,5 +1,3 @@
-import { UnicodeCaptureGroups } from '@com.robhameetman/utils';
-
 /**
  * The USVString type corresponds to scalar value strings. Depending on the
  * context, these can be treated as sequences of code units or scalar values. A
@@ -22,4 +20,4 @@ export type USVString = string;
  */
 export const isUSVString = (value: unknown): value is USVString =>
 	typeof value === 'string' &&
-	!RegExp(`[${UnicodeCaptureGroups.SurrPair}]`).test(value as string);
+	!RegExp('[\\ud800-\\udbff][\\udc00-\\udfff]').test(value as string);

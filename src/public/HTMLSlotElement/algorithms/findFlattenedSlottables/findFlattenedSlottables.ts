@@ -1,6 +1,6 @@
-import findSlottables from '@/public/HTMLSlotElement/algorithms/findSlottables';
-import { type Slottables, isSlottable } from '@/nodes/mixins/Slottable';
-import findASlot from '@/nodes/mixins/Slottable/algorithms/findASlot';
+import findSlottables from '#public/HTMLSlotElement/algorithms/findSlottables';
+import { type Slottables, isSlottable } from '#nodes/mixins/Slottable';
+import findASlot from '#nodes/mixins/Slottable/algorithms/findASlot';
 
 const isSlotWhoseRootIsShadowRoot = (node: Node): node is HTMLSlotElement => {
 	if (!isSlottable(node)) {

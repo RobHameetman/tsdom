@@ -1,7 +1,7 @@
-import { firstNodeInIteratorCollectionFollowing, firstNodeInIteratorCollectionPreceding } from '@/public/NodeIterator/associations/iteratorCollection';
-import filter from '@/public/NodeIterator/algorithms/filter';
-import { setPointerBeforeReferenceFor } from '@/public/NodeIterator/associations/pointerBeforeReference';
-import { setReferenceOf } from '@/public/NodeIterator/associations/reference';
+import { firstNodeInIteratorCollectionFollowing, firstNodeInIteratorCollectionPreceding } from '#public/NodeIterator/associations/iteratorCollection';
+import filter from '#public/NodeIterator/algorithms/filter';
+import { setPointerBeforeReferenceFor } from '#public/NodeIterator/associations/pointerBeforeReference';
+import { setReferenceOf } from '#public/NodeIterator/associations/reference';
 
 export type Traversal = 'next' | 'previous';
 

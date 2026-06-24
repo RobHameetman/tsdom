@@ -1,9 +1,9 @@
-import List from '@/infra/List';
-import Queue from '@/infra/Queue';
-import { disposeCallbackFor, initializeCallbackFor } from '@/public/MutationObserver/associations/callback';
-import { disposeNodeListFor, nodeListOf } from '@/public/MutationObserver/associations/nodeList';
-import { disposeRecordQueueFor, recordQueueOf } from '@/public/MutationObserver/associations/recordQueue';
-import { registeredObserversOf } from '@/public/Node/associations/registeredObserverList';
+import List from '#infra/List';
+import Queue from '#infra/Queue';
+import { disposeCallbackFor, initializeCallbackFor } from '#public/MutationObserver/associations/callback';
+import { disposeNodeListFor, nodeListOf } from '#public/MutationObserver/associations/nodeList';
+import { disposeRecordQueueFor, recordQueueOf } from '#public/MutationObserver/associations/recordQueue';
+import { registeredObserversOf } from '#public/Node/associations/registeredObserverList';
 
 export const MutationObserver = function(this: MutationObserver, callback: MutationCallback) {
 	initializeCallbackFor(this, callback);

@@ -1,4 +1,7 @@
-import { isFunction, isObject, isUndefined, noop } from '@com.robhameetman/utils';
+import isFunction from '#_internals/utils/functions/isFunction';
+import isObject from '#_internals/utils/functions/isObject';
+import isUndefined from '#_internals/utils/functions/isUndefined';
+import noop from '#_internals/utils/functions/noop';
 
 const _listeners = new Map<string, EventListenerOrEventListenerObject | null>();
 

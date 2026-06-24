@@ -1,7 +1,7 @@
-import OrderedSet from '@/infra/OrderedSet';
-import { childrenOf } from '@/tree/Tree/relationships/children';
-import { rootOf } from '@/tree/Tree/relationships/parents';
-import { hostedBy, hostIncludingAncestorsOf, hostOf, isHost } from '@/tree/Tree/relationships/hosts';
+import OrderedSet from '#infra/OrderedSet';
+import { childrenOf } from '#tree/Tree/relationships/children';
+import { rootOf } from '#tree/Tree/relationships/parents';
+import { hostedBy, hostIncludingAncestorsOf, hostOf, isHost } from '#tree/Tree/relationships/hosts';
 
 export const isShadowHost = <
 	N extends Node | ShadowRoot = Node | ShadowRoot,

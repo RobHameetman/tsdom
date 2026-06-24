@@ -1,17 +1,17 @@
-import pendingMutationObservers from '@/agent/__PENDING_MUTATION_OBSERVERS__';
-import { inclusiveAncestorsOf } from '@/tree/Tree/relationships/parents';
-import { registeredObserversOf } from '@/public/Node/associations';
-import { enqueueRecord } from '@/public/MutationObserver/associations/recordQueue';
-import { setType } from '@/public/MutationRecord/data/type';
-import { setTarget } from '@/public/MutationRecord/data/target';
-import { setAttributeName } from '@/public/MutationRecord/data/attributeName';
-import { setAttributeNamespace } from '@/public/MutationRecord/data/attributeNamespace';
-import { setOldValue } from '@/public/MutationRecord/data/oldValue';
-import { setAddedNodes } from '@/public/MutationRecord/data/addedNodes';
-import { setRemovedNodes } from '@/public/MutationRecord/data/removedNodes';
-import { setNextSibling } from '@/public/MutationRecord/data/nextSibling';
-import { setPreviousSibling } from '@/public/MutationRecord/data/previousSibling';
-import queueAMutationObserverMicrotask from '@/public/MutationObserver/algorithms/queueAMutationObserverMicrotask';
+import pendingMutationObservers from '#agent/__PENDING_MUTATION_OBSERVERS__';
+import { inclusiveAncestorsOf } from '#tree/Tree/relationships/parents';
+import { registeredObserversOf } from '#public/Node/associations';
+import { enqueueRecord } from '#public/MutationObserver/associations/recordQueue';
+import { setType } from '#public/MutationRecord/data/type';
+import { setTarget } from '#public/MutationRecord/data/target';
+import { setAttributeName } from '#public/MutationRecord/data/attributeName';
+import { setAttributeNamespace } from '#public/MutationRecord/data/attributeNamespace';
+import { setOldValue } from '#public/MutationRecord/data/oldValue';
+import { setAddedNodes } from '#public/MutationRecord/data/addedNodes';
+import { setRemovedNodes } from '#public/MutationRecord/data/removedNodes';
+import { setNextSibling } from '#public/MutationRecord/data/nextSibling';
+import { setPreviousSibling } from '#public/MutationRecord/data/previousSibling';
+import queueAMutationObserverMicrotask from '#public/MutationObserver/algorithms/queueAMutationObserverMicrotask';
 
 /**
  * Queues a mutation record for all interested mutation observers.

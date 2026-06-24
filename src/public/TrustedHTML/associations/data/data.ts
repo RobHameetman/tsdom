@@ -1,4 +1,4 @@
-// import type { DOMString } from '@/_internals/webidl/DOMString';
+// import type { DOMString } from '#_internals/webidl/DOMString';
 
 /**
  * @see https://w3c.github.io/trusted-types/dist/spec/#trustedhtml-data

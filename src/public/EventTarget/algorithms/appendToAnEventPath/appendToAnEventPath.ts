@@ -1,5 +1,5 @@
-import { rootOf } from '@/tree/Tree/relationships/parents';
-import { type Path, pathOf } from '@/public/Event/associations/path';
+import { rootOf } from '#tree/Tree/relationships/parents';
+import { type Path, pathOf } from '#public/Event/associations/path';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-event-path-append

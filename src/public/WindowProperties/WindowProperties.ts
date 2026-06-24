@@ -1,4 +1,4 @@
-import EventTarget from '@/public/EventTarget';
+import EventTarget from '#public/EventTarget';
 
 export const WindowProperties = function(
 	this: Window,

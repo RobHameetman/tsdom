@@ -1,4 +1,4 @@
-import OrderedSet from '@/infra/OrderedSet';
+import OrderedSet from '#infra/OrderedSet';
 
 /**
  * A set of mutation records that have not yet been delivered to mutation

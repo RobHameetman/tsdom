@@ -1,4 +1,4 @@
-import extractErrorInformation from '@/algorithms/extractErrorInformation';
+import extractErrorInformation from '#algorithms/extractErrorInformation';
 
 /**
  * @TODO - These types will be moved eventually. This is gonna be a whole thing

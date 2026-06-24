@@ -1,4 +1,4 @@
-import List from '@/infra/List';
+import List from '#infra/List';
 
 /**
  * An event listener can be used to observe a specific event.

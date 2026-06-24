@@ -1,6 +1,6 @@
-import Tree from '@/tree/Tree';
-import remove from '@/tree/NodeTree/algorithms/remove';
-// import { OrderedSet } from '@/_internals/infra/OrderedSet';
+import Tree from '#tree/Tree';
+import remove from '#tree/NodeTree/algorithms/remove';
+// import { OrderedSet } from '#_internals/infra/OrderedSet';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-node-insert

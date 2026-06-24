@@ -1,8 +1,8 @@
 import { faker } from '@faker-js/faker';
-import { DomNodeType, type DomNodeTypes } from '@/enums/DomNodeType';
-import { randomDomNodeType } from '@/enums/DomNodeType/__test__';
-import { fakeNodeList } from '@/public/NodeList/__test__';
-import { fakeEventTarget } from '@/public/EventTarget/__test__';
+import { DomNodeType, type DomNodeTypes } from '#enums/DomNodeType';
+import { randomDomNodeType } from '#enums/DomNodeType/__test__';
+import { fakeNodeList } from '#public/NodeList/__test__';
+import { fakeEventTarget } from '#public/EventTarget/__test__';
 
 const xml = () =>
 	new DOMParser().parseFromString('<xml></xml>', 'application/xml');

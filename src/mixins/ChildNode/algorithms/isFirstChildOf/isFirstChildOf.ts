@@ -1,6 +1,6 @@
-import isRootNode from '@/nodes/tree/Node/algorithms/isRootNode';
-import { isChildNode } from '@/nodes/mixins/ChildNode';
-import isParentOf from '@/nodes/mixins/ParentNode/algorithms/isParentOf';
+import isRootNode from '#nodes/tree/Node/algorithms/isRootNode';
+import { isChildNode } from '#nodes/mixins/ChildNode';
+import isParentOf from '#nodes/mixins/ParentNode/algorithms/isParentOf';
 
 /**
  * An object A whose parent is object B is a child of B.

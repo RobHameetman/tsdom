@@ -1,7 +1,6 @@
-import { isType } from '@com.robhameetman/utils';
-import Tree from '@/tree/Tree';
-import NodeTree from '@/tree/NodeTree';
-import { hasShadowRoot, isShadowIncludingAncestorOf, isShadowIncludingDescendantOf, isShadowIncludingInclusiveAncestorOf, isShadowIncludingInclusiveDescendantOf, shadowIncludingAncestorsOf, shadowIncludingDescendantsOf, shadowIncludingInclusiveAncestorsOf, shadowIncludingInclusiveDescendantsOf, shadowIncludingRootOf, shadowRootOf } from '@/tree/ShadowTree/relationships/shadowRoots';
+import Tree from '#tree/Tree';
+import NodeTree from '#tree/NodeTree';
+import { hasShadowRoot, isShadowIncludingAncestorOf, isShadowIncludingDescendantOf, isShadowIncludingInclusiveAncestorOf, isShadowIncludingInclusiveDescendantOf, shadowIncludingAncestorsOf, shadowIncludingDescendantsOf, shadowIncludingInclusiveAncestorsOf, shadowIncludingInclusiveDescendantsOf, shadowIncludingRootOf, shadowRootOf } from '#tree/ShadowTree/relationships/shadowRoots';
 
 export interface ShadowTree<H extends Node = Node> extends NodeTree<ShadowRoot, H> {
 	shadowIncludingRootOf<N extends Node | ShadowRoot = Node | ShadowRoot, R extends Exclude<N, ShadowRoot> = Exclude<N, ShadowRoot>, H extends N = N>(node: N): R;

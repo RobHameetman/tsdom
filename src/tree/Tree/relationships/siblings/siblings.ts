@@ -1,7 +1,7 @@
-import { OrderedSet } from '@/infra/OrderedSet';
-import { parentOf, rootOf, setAsParent } from '@/tree/Tree/relationships/parents';
-import { childrenOf, setChildOf } from '@/tree/Tree/relationships/children';
-import { treeOrderHasChangedFor } from '@/tree/Tree/traversal/order';
+import { OrderedSet } from '#infra/OrderedSet';
+import { parentOf, rootOf, setAsParent } from '#tree/Tree/relationships/parents';
+import { childrenOf, setChildOf } from '#tree/Tree/relationships/children';
+import { treeOrderHasChangedFor } from '#tree/Tree/traversal/order';
 
 export type Children<
 	T extends object = object,

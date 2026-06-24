@@ -1,10 +1,10 @@
-import InUseAttributeError from '@/errors/InUseAttributeError';
-import getTrustedTypeCompliantAttributeValue from '@/public/Attr/algorithms/getTrustedTypeCompliantAttributeValue';
-import { setValueOf } from '@/public/Attr/associations/value';
-import { elementOf } from '@/public/Attr/associations/element';
-import getAnAttributeByNamespaceAndLocalName from '@/public/Element/attributes/getAnAttributeByNamespaceAndLocalName';
-import append from '@/public/Element/attributes/append';
-import replace from '@/public/Element/attributes/replace';
+import InUseAttributeError from '#errors/InUseAttributeError';
+import getTrustedTypeCompliantAttributeValue from '#public/Attr/algorithms/getTrustedTypeCompliantAttributeValue';
+import { setValueOf } from '#public/Attr/associations/value';
+import { elementOf } from '#public/Attr/associations/element';
+import getAnAttributeByNamespaceAndLocalName from '#public/Element/attributes/getAnAttributeByNamespaceAndLocalName';
+import append from '#public/Element/attributes/append';
+import replace from '#public/Element/attributes/replace';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-set

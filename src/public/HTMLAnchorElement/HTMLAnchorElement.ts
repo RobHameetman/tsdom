@@ -1,8 +1,9 @@
-import { DomNodeNamespace, isUndefined, noop } from '@com.robhameetman/utils';
-import HTMLElement from '@/public/HTMLElement';
-import HTMLHyperlinkElementUtils from '@/mixins/HTMLHyperlinkElementUtils';
-import isFocused from '@/misc/isFocused';
-import { setActivationBehaviorOf } from '@/public/EventTarget/associations/activationBehavior';
+import isUndefined from '#_internals/utils/functions/isUndefined';
+import noop from '#_internals/utils/functions/noop';
+import HTMLElement from '#public/HTMLElement';
+import HTMLHyperlinkElementUtils from '#mixins/HTMLHyperlinkElementUtils';
+import isFocused from '#misc/isFocused';
+import { setActivationBehaviorOf } from '#public/EventTarget/associations/activationBehavior';
 
 const _handleNavigation = ($this: HTMLAnchorElement) => {
 	const { download, href } = $this;

@@ -1,5 +1,5 @@
-import type { ParentOf } from '@/nodes/mixins/ParentNode/algorithms/isParentOf';
-import isChildOf from '@/nodes/mixins/ChildNode/algorithms/isChildOf';
+import type { ParentOf } from '#nodes/mixins/ParentNode/algorithms/isParentOf';
+import isChildOf from '#nodes/mixins/ChildNode/algorithms/isChildOf';
 
 export type DescendantOf<N extends Node = Node> =
 	N extends ParentOf<infer C>

@@ -1,12 +1,12 @@
-import { addedNodesOf, disposeAddedNodesOf } from '@/public/MutationRecord/data/addedNodes';
-import { attributeNameOf, disposeAttributeNameOf } from '@/public/MutationRecord/data/attributeName';
-import { attributeNamespaceOf, disposeAttributeNamespaceOf } from '@/public/MutationRecord/data/attributeNamespace';
-import { disposeNextSiblingOf, nextSiblingOf } from '@/public/MutationRecord/data/nextSibling';
-import { disposeOldValueOf, oldValueOf } from '@/public/MutationRecord/data/oldValue';
-import { disposePreviousSiblingOf, previousSiblingOf } from '@/public/MutationRecord/data/previousSibling';
-import { disposeRemovedNodesOf, removedNodesOf } from '@/public/MutationRecord/data/removedNodes';
-import { disposeTargetOf, targetOf } from '@/public/MutationRecord/data/target';
-import { disposeTypeOf, typeOf } from '@/public/MutationRecord/data/type';
+import { addedNodesOf, disposeAddedNodesOf } from '#public/MutationRecord/data/addedNodes';
+import { attributeNameOf, disposeAttributeNameOf } from '#public/MutationRecord/data/attributeName';
+import { attributeNamespaceOf, disposeAttributeNamespaceOf } from '#public/MutationRecord/data/attributeNamespace';
+import { disposeNextSiblingOf, nextSiblingOf } from '#public/MutationRecord/data/nextSibling';
+import { disposeOldValueOf, oldValueOf } from '#public/MutationRecord/data/oldValue';
+import { disposePreviousSiblingOf, previousSiblingOf } from '#public/MutationRecord/data/previousSibling';
+import { disposeRemovedNodesOf, removedNodesOf } from '#public/MutationRecord/data/removedNodes';
+import { disposeTargetOf, targetOf } from '#public/MutationRecord/data/target';
+import { disposeTypeOf, typeOf } from '#public/MutationRecord/data/type';
 
 export const MutationRecord = function(this: MutationRecord) {
 	throw new TypeError('Failed to construct \'MutationRecord\': Illegal constructor');

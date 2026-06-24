@@ -1,4 +1,4 @@
-import type { PotentialEventTarget } from '@/public/EventTarget';
+import type { PotentialEventTarget } from '#public/EventTarget';
 
 /**
  * @see https://dom.spec.whatwg.org/#event-target

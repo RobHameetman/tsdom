@@ -1,5 +1,5 @@
-import { abortAlgorithmsOf } from '@/public/AbortSignal/associations/abortAlgorithms';
-import fireAnEvent from '@/public/Event/algorithms/fireAnEvent';
+import { abortAlgorithmsOf } from '#public/AbortSignal/associations/abortAlgorithms';
+import fireAnEvent from '#public/Event/algorithms/fireAnEvent';
 
 /**
  * @see https://dom.spec.whatwg.org/#run-the-abort-steps

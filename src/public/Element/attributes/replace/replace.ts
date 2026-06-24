@@ -1,7 +1,7 @@
-import { elementOf, setElementOf } from '@/public/Attr/associations/element';
-import { attributeListOf } from '@/public/Element/associations/attributeList';
-import handleAttributeChanges from '@/public/Element/attributes/handleAttributeChanges';
-import { setNodeDocumentOf } from '@/public/Node/associations/nodeDocument';
+import { elementOf, setElementOf } from '#public/Attr/associations/element';
+import { attributeListOf } from '#public/Element/associations/attributeList';
+import handleAttributeChanges from '#public/Element/attributes/handleAttributeChanges';
+import { setNodeDocumentOf } from '#public/Node/associations/nodeDocument';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-replace

@@ -1,18 +1,18 @@
-// import implOf from '@/_internals/impl';
-import AbortError from '@/errors/AbortError';
-import EventTarget from '@/public/EventTarget';
-import aborted from '@/public/AbortSignal/algorithms/aborted';
-import createADependentAbortSignal from '@/public/AbortSignal/algorithms/createADependentAbortSignal';
-import { disposeAbortAlgorithmsOf, initializeAbortAlgorithmsOf } from '@/public/AbortSignal/associations/abortAlgorithms';
-import { abortReasonOf, disposeAbortReasonOf, initializeAbortReasonOf, setAbortReasonOf } from '@/public/AbortSignal/associations/abortReason';
-import { disposeDependentOf, initializeDependentOf } from '@/public/AbortSignal/associations/dependent';
-import { disposeDependentSignalsOf, initializeDependentSignalsOf } from '@/public/AbortSignal/associations/dependentSignals';
-import { disposeSourceSignalsOf, initializeSourceSignalsOf } from '@/public/AbortSignal/associations/sourceSignals';
-import activateAnEventHandler from '@/public/EventTarget/algorithms/activateAnEventHandler';
-import deactivateAnEventHandler from '@/public/EventTarget/algorithms/deactivateAnEventHandler';
-import determineTheTargetOfAnEventHandler from '@/public/EventTarget/algorithms/determineTheTargetOfAnEventHandler';
-import getTheCurrentValueOfTheEventHandler from '@/public/EventTarget/algorithms/getTheCurrentValueOfTheEventHandler';
-import { eventHandlerMapOf } from '@/public/EventTarget/associations';
+// import implOf from '#_internals/impl';
+import AbortError from '#errors/AbortError';
+import EventTarget from '#public/EventTarget';
+import aborted from '#public/AbortSignal/algorithms/aborted';
+import createADependentAbortSignal from '#public/AbortSignal/algorithms/createADependentAbortSignal';
+import { disposeAbortAlgorithmsOf, initializeAbortAlgorithmsOf } from '#public/AbortSignal/associations/abortAlgorithms';
+import { abortReasonOf, disposeAbortReasonOf, initializeAbortReasonOf, setAbortReasonOf } from '#public/AbortSignal/associations/abortReason';
+import { disposeDependentOf, initializeDependentOf } from '#public/AbortSignal/associations/dependent';
+import { disposeDependentSignalsOf, initializeDependentSignalsOf } from '#public/AbortSignal/associations/dependentSignals';
+import { disposeSourceSignalsOf, initializeSourceSignalsOf } from '#public/AbortSignal/associations/sourceSignals';
+import activateAnEventHandler from '#public/EventTarget/algorithms/activateAnEventHandler';
+import deactivateAnEventHandler from '#public/EventTarget/algorithms/deactivateAnEventHandler';
+import determineTheTargetOfAnEventHandler from '#public/EventTarget/algorithms/determineTheTargetOfAnEventHandler';
+import getTheCurrentValueOfTheEventHandler from '#public/EventTarget/algorithms/getTheCurrentValueOfTheEventHandler';
+import { eventHandlerMapOf } from '#public/EventTarget/associations';
 
 export const AbortSignal = function(this: AbortSignal) {
 	throw new TypeError('Failed to construct \'AbortSignal\': Illegal constructor');

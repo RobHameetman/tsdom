@@ -1,6 +1,6 @@
-import { setValueOf } from '@/public/Attr/associations/value';
-import { elementOf } from '@/public/Attr/associations/element';
-import handleAttributeChanges from '@/public/Element/attributes/handleAttributeChanges';
+import { setValueOf } from '#public/Attr/associations/value';
+import { elementOf } from '#public/Attr/associations/element';
+import handleAttributeChanges from '#public/Element/attributes/handleAttributeChanges';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-change

@@ -1,5 +1,5 @@
-import implOf from '@/_internals/impl';
-import { dataOf, initializeDataOf } from '@/security/TrustedTypePolicyFactory/associations/data';
+import implOf from '#_internals/impl';
+import { dataOf, initializeDataOf } from '#security/TrustedTypePolicyFactory/associations/data';
 
 /**
  * The {@link TrustedTypePolicyFactory} interface represents a string that a developer can

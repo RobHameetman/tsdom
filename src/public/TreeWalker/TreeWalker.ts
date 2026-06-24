@@ -1,11 +1,11 @@
-import implOf from '@/_internals/impl';
-import filter from '@/public/TreeWalker/algorithms/filter';
-import traverseChildren from '@/public/TreeWalker/algorithms/traverseChildren';
-import traverseSiblings from '@/public/TreeWalker/algorithms/traverseSiblings';
-import { disposeFilterOf, filterOf, initializeFilterOf } from '@/public/TreeWalker/associations/filter';
-import { currentOf, disposeCurrentOf, setCurrentOf } from '@/public/TreeWalker/associations/current';
-import { disposeRootOf, isTreeWalkersRoot, rootOf } from '@/public/TreeWalker/associations/root';
-import { disposeWhatToShowOf, whatToShowOf } from '@/public/TreeWalker/associations/whatToShow';
+import implOf from '#_internals/impl';
+import filter from '#public/TreeWalker/algorithms/filter';
+import traverseChildren from '#public/TreeWalker/algorithms/traverseChildren';
+import traverseSiblings from '#public/TreeWalker/algorithms/traverseSiblings';
+import { disposeFilterOf, filterOf, initializeFilterOf } from '#public/TreeWalker/associations/filter';
+import { currentOf, disposeCurrentOf, setCurrentOf } from '#public/TreeWalker/associations/current';
+import { disposeRootOf, isTreeWalkersRoot, rootOf } from '#public/TreeWalker/associations/root';
+import { disposeWhatToShowOf, whatToShowOf } from '#public/TreeWalker/associations/whatToShow';
 
 /**
  * The **`TreeWalker`** object represents the nodes of a document subtree and a

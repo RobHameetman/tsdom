@@ -1,6 +1,6 @@
-import createAnElement from '@/public/Element/algorithms/createAnElement';
-import { isValueOf } from '@/public/Element/associations/isValue';
-import { setNodeDocumentOf } from '@/public/Node/associations/nodeDocument';
+import createAnElement from '#public/Element/algorithms/createAnElement';
+import { isValueOf } from '#public/Element/associations/isValue';
+import { setNodeDocumentOf } from '#public/Node/associations/nodeDocument';
 
 /**
  * Determines whether two nodes are equal.

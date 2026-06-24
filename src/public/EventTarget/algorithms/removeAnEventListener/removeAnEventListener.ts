@@ -1,4 +1,4 @@
-import { type Listener, eventListenerListFor } from '@/public/EventTarget/associations/eventListenerList';
+import { type Listener, eventListenerListFor } from '#public/EventTarget/associations/eventListenerList';
 
 /**
  * @see https://dom.spec.whatwg.org/#remove-an-event-listener

@@ -1,4 +1,4 @@
-import { validElementLocalName } from '@/algorithms/validElementLocalName';
+import { validElementLocalName } from '#algorithms/validElementLocalName';
 
 /**
  * Determines whether a string is a valid attribute local name.

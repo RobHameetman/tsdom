@@ -1,4 +1,4 @@
-import preinsert from '@/tree/NodeTree/algorithms/preinsert';
+import preinsert from '#tree/NodeTree/algorithms/preinsert';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-node-append

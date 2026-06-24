@@ -1,6 +1,6 @@
-import { isSlot } from '@/public/HTMLSlotElement';
-import assignedSlot from '@/mixins/Slottable/associations/assignedSlot';
-import { inclusiveDescendantsOf } from '@/tree/Tree/relationships/children';
+import { isSlot } from '#public/HTMLSlotElement';
+import assignedSlot from '#mixins/Slottable/associations/assignedSlot';
+import { inclusiveDescendantsOf } from '#tree/Tree/relationships/children';
 
 /**
  * @see https://dom.spec.whatwg.org/#find-a-slot

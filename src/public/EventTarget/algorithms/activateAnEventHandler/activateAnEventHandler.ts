@@ -1,6 +1,6 @@
-import addAnEventListener from '@/public/EventTarget/algorithms/addAnEventListener';
-import { eventHandlerMapOf } from '@/public/EventTarget/associations/eventHandlerMap';
-import type { Listener } from '@/public/EventTarget/associations/eventListenerList';
+import addAnEventListener from '#public/EventTarget/algorithms/addAnEventListener';
+import { eventHandlerMapOf } from '#public/EventTarget/associations/eventHandlerMap';
+import type { Listener } from '#public/EventTarget/associations/eventListenerList';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/webappapis.html#activate-an-event-handler

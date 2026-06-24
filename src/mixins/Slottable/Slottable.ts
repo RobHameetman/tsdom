@@ -1,8 +1,8 @@
-import { isObject } from '@com.robhameetman/utils';
-import { isSlot } from '@/tree/ShadowTree/relationships/slots';
-import type { Slot } from '@/tree/ShadowTree/types/Slot';
-import isAssigned from '@/mixins/Slottable/algorithms/isAssigned';
-import manuallyAssignedSlots from '@/mixins/Slottable/associations/manuallyAssignedSlot';
+import isObject from '#_internals/utils/functions/isObject';
+import { isSlot } from '#tree/ShadowTree/relationships/slots';
+import type { Slot } from '#tree/ShadowTree/types/Slot';
+import isAssigned from '#mixins/Slottable/algorithms/isAssigned';
+import manuallyAssignedSlots from '#mixins/Slottable/associations/manuallyAssignedSlot';
 
 /**
  * @see https://dom.spec.whatwg.org/#light-tree-slotables

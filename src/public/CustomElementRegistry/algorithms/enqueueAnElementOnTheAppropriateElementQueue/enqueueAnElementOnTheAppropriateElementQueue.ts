@@ -1,4 +1,4 @@
-import { backupElementQueue, currentElementQueue, customElementReactionsStack, processingTheBackupElementQueue, setProcessingTheBackupElementQueueFlag, unsetProcessingTheBackupElementQueueFlag } from '@/agent/__CUSTOM_ELEMENT_REACTIONS_STACK__';
+import { backupElementQueue, currentElementQueue, customElementReactionsStack, processingTheBackupElementQueue, setProcessingTheBackupElementQueueFlag, unsetProcessingTheBackupElementQueueFlag } from '#agent/__CUSTOM_ELEMENT_REACTIONS_STACK__';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-an-element-on-the-appropriate-element-queue

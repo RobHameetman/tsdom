@@ -1,5 +1,3 @@
-import { isType, isUndefined } from '@com.robhameetman/utils';
-
 export const ValidityState = function(
 	this: ValidityState,
 ) {
@@ -96,20 +94,17 @@ ValidityState.prototype = Object.create(Object.prototype, {
 });
 
 /**
- * Checks that an `unknown` value is an {@link Element}.
+ * Checks that an `unknown` value is an {@link ValidityState}.
  *
  * Requirements:
- *   - `value` must be an instance of {@link Element}.
+ *   - `value` must be an instance of {@link ValidityState}.
  *
  * @param value - An `unknown` value.
  *
- * @returns The determination that `value` is or is not an {@link Element}.
+ * @returns The determination that `value` is or is not an {@link ValidityState}.
  */
-export const isValidityState = (value: unknown): value is Element =>
-	/**
-	 * value
-	 */
-	(!isUndefined(window) && value instanceof Element) ||
-	isType<ValidityState>('ValidityState', value);
+export const isValidityState = (value: unknown): value is ValidityState =>
+	typeof globalThis.ValidityState !== 'undefined' &&
+	value instanceof globalThis.ValidityState;
 
 export default ValidityState;

@@ -1,4 +1,4 @@
-import DomNodeType from '@/nodes/enums/DomNodeType';
+import DomNodeType from '#nodes/enums/DomNodeType';
 import { fakeNode } from '../../Node/__test__';
 
 export const fakeDocumentFragment = ({

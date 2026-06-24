@@ -1,4 +1,4 @@
-import Queue from '@/infra/Queue';
+import Queue from '#infra/Queue';
 
 type UpgradeReaction = unknown;
 type CallbackReaction = unknown;

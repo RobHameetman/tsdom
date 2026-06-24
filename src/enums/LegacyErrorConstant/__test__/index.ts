@@ -1,2 +1,2 @@
-export * from './fakeDomNodeNamespace';
-export * from './randomDomNodeNamespace';
+export * from './fakeLegacyErrorConstant';
+export * from './randomLegacyErrorConstant';

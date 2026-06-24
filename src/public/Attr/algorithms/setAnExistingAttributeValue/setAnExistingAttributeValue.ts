@@ -1,6 +1,6 @@
-import { elementOf, elementIsNullOf } from '@/public/Attr/associations/element';
-import { setValueOf } from '@/public/Attr/associations/value';
-import getTrustedTypeCompliantAttributeValue from '@/public/Attr/algorithms/getTrustedTypeCompliantAttributeValue';
+import { elementOf, elementIsNullOf } from '#public/Attr/associations/element';
+import { setValueOf } from '#public/Attr/associations/value';
+import getTrustedTypeCompliantAttributeValue from '#public/Attr/algorithms/getTrustedTypeCompliantAttributeValue';
 
 /**
  * Sets the value of an existing attribute.

@@ -1,4 +1,4 @@
-import type { BoundaryPoint } from '@/public/AbstractRange/types/BoundaryPoint';
+import type { BoundaryPoint } from '#public/AbstractRange/types/BoundaryPoint';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-range-start

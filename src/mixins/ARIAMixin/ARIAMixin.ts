@@ -1,4 +1,5 @@
-import { isObject, isString } from '@com.robhameetman/utils';
+import isObject from '#_internals/utils/functions/isObject';
+import isString from '#_internals/utils/functions/isString';
 
 /**
  * Creates an implementation of the {@link ARIAMixin} interface.

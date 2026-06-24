@@ -1,5 +1,6 @@
-import { isObject, isUndefined } from '@com.robhameetman/utils';
-import { isHTMLSlotElement } from '@/public/HTMLSlotElement';
+import isObject from '#_internals/utils/functions/isObject';
+import isUndefined from '#_internals/utils/functions/isUndefined';
+import { isHTMLSlotElement } from '#public/HTMLSlotElement';
 
 export const XPathEvaluatorBase = <T extends Document = Document>(prototype: T) =>
 	Object.defineProperties(prototype, {

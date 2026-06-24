@@ -1,5 +1,5 @@
-import List from '@/infra/List';
-import Stack from '@/infra/Stack';
+import List from '#infra/List';
+import Stack from '#infra/Stack';
 
 export const normalizeIntoATokenStream = (input: string) => {
   if (isTokenStream(input)) {

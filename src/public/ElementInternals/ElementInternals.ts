@@ -1,10 +1,10 @@
-import ARIAMixin from '@/mixins/ARIAMixin';
-import { isShadowHost, shadowRootOf } from '@/tree/ShadowTree/relationships/shadowRoots';
-import nodeListOf from '@/public/NodeList';
-import CustomStateSet from '@/public/CustomStateSet';
-import ValidityState from '@/public/ValidityState';
-import { targetElementOf } from '@/public/ElementInternals/associations/targetElement';
-import { availableToElementInternalsOf } from '@/public/ShadowRoot/associations';
+import ARIAMixin from '#mixins/ARIAMixin';
+import { isShadowHost, shadowRootOf } from '#tree/ShadowTree/relationships/shadowRoots';
+import nodeListOf from '#public/NodeList';
+import CustomStateSet from '#public/CustomStateSet';
+import ValidityState from '#public/ValidityState';
+import { targetElementOf } from '#public/ElementInternals/associations/targetElement';
+import { availableToElementInternalsOf } from '#public/ShadowRoot/associations';
 
 const withMixins = (prototype: Element) =>
 	ARIAMixin(prototype);

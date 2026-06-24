@@ -1,8 +1,8 @@
-import { initializeAbortAlgorithmsOf } from '@/public/AbortSignal/associations/abortAlgorithms';
-import { initializeAbortReasonOf } from '@/public/AbortSignal/associations/abortReason';
-import { initializeDependentOf } from '@/public/AbortSignal/associations/dependent';
-import { initializeDependentSignalsOf } from '@/public/AbortSignal/associations/dependentSignals';
-import { initializeSourceSignalsOf } from '@/public/AbortSignal/associations/sourceSignals';
+import { initializeAbortAlgorithmsOf } from '#public/AbortSignal/associations/abortAlgorithms';
+import { initializeAbortReasonOf } from '#public/AbortSignal/associations/abortReason';
+import { initializeDependentOf } from '#public/AbortSignal/associations/dependent';
+import { initializeDependentSignalsOf } from '#public/AbortSignal/associations/dependentSignals';
+import { initializeSourceSignalsOf } from '#public/AbortSignal/associations/sourceSignals';
 import AbortSignal from './AbortSignal';
 
 export const createAbortSignal = () => {

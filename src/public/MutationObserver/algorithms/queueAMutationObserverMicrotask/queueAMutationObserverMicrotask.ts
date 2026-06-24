@@ -1,5 +1,5 @@
-import mutationObserverMicrotaskQueued, { setMutationObserverMicrotaskQueuedToTrue } from '@/agent/__MUTATION_OBSERVER_MICROTASK_QUEUED__';
-import notifyMutationObservers from '@/public/MutationObserver/algorithms/notifyMutationObservers';
+import mutationObserverMicrotaskQueued, { setMutationObserverMicrotaskQueuedToTrue } from '#agent/__MUTATION_OBSERVER_MICROTASK_QUEUED__';
+import notifyMutationObservers from '#public/MutationObserver/algorithms/notifyMutationObservers';
 
 /**
  *

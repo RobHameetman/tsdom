@@ -1,4 +1,4 @@
-import OrderedSet from '@/infra/OrderedSet';
+import OrderedSet from '#infra/OrderedSet';
 
 export type AbortAlgorithm = (reason: unknown) => void;
 

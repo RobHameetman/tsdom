@@ -1,18 +1,18 @@
-import OrderedSet from '@/infra/OrderedSet';
-import { rootOf, removeParentOf, inclusiveAncestorsOf } from '@/tree/Tree/relationships/parents';
-import { shadowIncludingDescendantsOf } from '@/tree/ShadowTree/relationships/shadowRoots';
-import { removeSiblingOf } from '@/tree/Tree/relationships/siblings';
-import { inclusiveDescendantsOf, removeChildOf } from '@/tree/Tree/relationships/children';
-import { isSlot } from '@/public/HTMLSlotElement';
-import { assignedNodesIsEmptyFor } from '@/public/HTMLSlotElement/associations/assignedNodes';
-import assignSlottables from '@/public/HTMLSlotElement/algorithms/assignSlottables';
-import signalASlotChange from '@/public/HTMLSlotElement/algorithms/signalASlotChange';
-import assignSlottablesForTreeOf from '@/public/HTMLSlotElement/algorithms/assignSlottablesForTreeOf';
-import queueATreeMutationRecord from '@/public/MutationRecord/algorithms/queueATreeMutationRecord';
-import { isAssignedSlottable } from '@/nodes/mixins/Slottable';
-import { registeredObserverList } from '@/public/Node/associations';
-import liveRangePreremoveSteps from '@/ranges/Range/algorithms/liveRangePreremoveSteps';
-import { isShadowRoot } from '@/webcomponents/ShadowRoot';
+import OrderedSet from '#infra/OrderedSet';
+import { rootOf, removeParentOf, inclusiveAncestorsOf } from '#tree/Tree/relationships/parents';
+import { shadowIncludingDescendantsOf } from '#tree/ShadowTree/relationships/shadowRoots';
+import { removeSiblingOf } from '#tree/Tree/relationships/siblings';
+import { inclusiveDescendantsOf, removeChildOf } from '#tree/Tree/relationships/children';
+import { isSlot } from '#public/HTMLSlotElement';
+import { assignedNodesIsEmptyFor } from '#public/HTMLSlotElement/associations/assignedNodes';
+import assignSlottables from '#public/HTMLSlotElement/algorithms/assignSlottables';
+import signalASlotChange from '#public/HTMLSlotElement/algorithms/signalASlotChange';
+import assignSlottablesForTreeOf from '#public/HTMLSlotElement/algorithms/assignSlottablesForTreeOf';
+import queueATreeMutationRecord from '#public/MutationRecord/algorithms/queueATreeMutationRecord';
+import { isAssignedSlottable } from '#nodes/mixins/Slottable';
+import { registeredObserverList } from '#public/Node/associations';
+import liveRangePreremoveSteps from '#ranges/Range/algorithms/liveRangePreremoveSteps';
+import { isShadowRoot } from '#webcomponents/ShadowRoot';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-node-remove

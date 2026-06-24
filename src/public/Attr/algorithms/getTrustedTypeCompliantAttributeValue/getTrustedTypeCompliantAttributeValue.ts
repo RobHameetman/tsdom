@@ -1,4 +1,4 @@
-import getTrustedTypeDataForAttribute from '@/public/Attr/algorithms/getTrustedTypeDataForAttribute';
+import getTrustedTypeDataForAttribute from '#public/Attr/algorithms/getTrustedTypeDataForAttribute';
 
 /**
  * @see https://dom.spec.whatwg.org/#set-an-existing-attribute-value

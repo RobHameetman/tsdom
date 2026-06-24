@@ -1,7 +1,7 @@
-// import implOf from '@/_internals/impl';
-import LinkStyle from '@/mixins/LinkStyle';
-import CharacterData from '@/public/CharacterData';
-import { disposeTargetOf, targetOf } from '@/public/ProcessingInstruction/associations/target';
+// import implOf from '#_internals/impl';
+import LinkStyle from '#mixins/LinkStyle';
+import CharacterData from '#public/CharacterData';
+import { disposeTargetOf, targetOf } from '#public/ProcessingInstruction/associations/target';
 
 const withMixins = (prototype: ProcessingInstruction) =>
 	LinkStyle(prototype);

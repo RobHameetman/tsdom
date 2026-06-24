@@ -1,4 +1,4 @@
-import type { ModuleScript } from '@/algorithms/reportAnException';
+import type { ModuleScript } from '#algorithms/reportAnException';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/webappapis.html#module-map

@@ -1,4 +1,4 @@
-import Document from '@/public/Document';
+import Document from '#public/Document';
 
 export const HTMLDocument = function(this: HTMLDocument) {
 	throw new TypeError('Failed to construct \'HTMLDocument\': Illegal constructor');

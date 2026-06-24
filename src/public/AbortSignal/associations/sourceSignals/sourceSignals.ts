@@ -1,4 +1,4 @@
-import OrderedSet from '@/infra/OrderedSet';
+import OrderedSet from '#infra/OrderedSet';
 
 /**
  * @see https://dom.spec.whatwg.org/#abortsignal-source-signals

@@ -1,6 +1,6 @@
-import implOf from '@/_internals/impl';
-import { disposeEndOf, endOffsetOf } from '@/public/AbstractRange/boundaries/end';
-import { disposeStartOf, startContainerOf, startOffsetOf } from '@/public/AbstractRange/boundaries/start';
+import implOf from '#_internals/impl';
+import { disposeEndOf, endOffsetOf } from '#public/AbstractRange/boundaries/end';
+import { disposeStartOf, startContainerOf, startOffsetOf } from '#public/AbstractRange/boundaries/start';
 
 export const AbstractRange = function(this: AbstractRange) {
 	throw new TypeError('Failed to construct \'AbstractRange\': Illegal constructor');

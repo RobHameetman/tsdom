@@ -1,4 +1,4 @@
-import { WhatToShow } from '@/public/NodeFilter';
+import { WhatToShow } from '#public/NodeFilter';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-traversal-whattoshow

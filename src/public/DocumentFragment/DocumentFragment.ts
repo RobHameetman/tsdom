@@ -1,10 +1,10 @@
-// import implOf from '@/_internals/impl';
-import { isSlottable } from '@/mixins/Slottable';
-import { setGetTheParentOf } from '@/public/EventTarget/associations/getTheParent';
-import Node from '@/public/Node';
-import NonElementParentNode, { asNonElementParentNode } from '@/mixins/NonElementParentNode';
-import ParentNode, { asParentNode } from '@/mixins/ParentNode';
-import { initializeNodeDocumentOf } from '@/public/Node/associations/nodeDocument';
+// import implOf from '#_internals/impl';
+import { isSlottable } from '#mixins/Slottable';
+import { setGetTheParentOf } from '#public/EventTarget/associations/getTheParent';
+import Node from '#public/Node';
+import NonElementParentNode, { asNonElementParentNode } from '#mixins/NonElementParentNode';
+import ParentNode, { asParentNode } from '#mixins/ParentNode';
+import { initializeNodeDocumentOf } from '#public/Node/associations/nodeDocument';
 
 /**
  * @TODO - Move this probably

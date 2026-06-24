@@ -1,4 +1,4 @@
-import type { DOMString } from '@/webidl/DOMString';
+import type { DOMString } from '#webidl/DOMString';
 
 /**
  * Used in {@link TrustedTypePolicyOptions} to define a callback that creates

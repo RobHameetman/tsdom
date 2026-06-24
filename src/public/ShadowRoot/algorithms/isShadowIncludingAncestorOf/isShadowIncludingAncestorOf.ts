@@ -1,4 +1,4 @@
-import isShadowIncludingDescendantOf from '@/webcomponents/ShadowRoot/algorithms/isShadowIncludingDescendantOf';
+import isShadowIncludingDescendantOf from '#webcomponents/ShadowRoot/algorithms/isShadowIncludingDescendantOf';
 
 /**
  * Checks whether a node is a shadow-including ancestor of another node.

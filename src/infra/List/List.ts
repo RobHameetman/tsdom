@@ -1,5 +1,5 @@
-import OrderedSet from '@/infra/OrderedSet';
-import type { ListLike } from '@/infra/ListLike';
+import OrderedSet from '#infra/OrderedSet';
+import type { ListLike } from '#infra/ListLike';
 
 /**
  * An alias for lists returned by {@link Array.concat()}.

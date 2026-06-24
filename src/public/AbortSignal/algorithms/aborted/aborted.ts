@@ -1,4 +1,4 @@
-import { abortReasonOf } from '@/public/AbortSignal/associations/abortReason';
+import { abortReasonOf } from '#public/AbortSignal/associations/abortReason';
 
 /**
  * @see https://dom.spec.whatwg.org/#abortsignal-aborted

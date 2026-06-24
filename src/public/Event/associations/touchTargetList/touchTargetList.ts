@@ -1,5 +1,5 @@
-import List from '@/infra/List';
-import type { PotentialEventTarget } from '@/public/EventTarget';
+import List from '#infra/List';
+import type { PotentialEventTarget } from '#public/EventTarget';
 
 /**
  * @see https://dom.spec.whatwg.org/#event-touch-target-list

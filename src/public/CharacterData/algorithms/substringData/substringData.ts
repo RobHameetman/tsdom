@@ -1,5 +1,5 @@
-import IndexSizeError from '@/errors/IndexSizeError';
-import lengthOf from '@/tree/NodeTree/algorithms/length';
+import IndexSizeError from '#errors/IndexSizeError';
+import lengthOf from '#tree/NodeTree/algorithms/length';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-cd-replace

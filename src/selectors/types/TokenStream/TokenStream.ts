@@ -1,5 +1,5 @@
-import List from '@/infra/List';
-import Stack from '@/infra/Stack';
+import List from '#infra/List';
+import Stack from '#infra/Stack';
 
 /**
  * @see https://drafts.csswg.org/css-syntax-3/#css-token-stream

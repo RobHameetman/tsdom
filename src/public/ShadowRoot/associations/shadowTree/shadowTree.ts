@@ -1,4 +1,4 @@
-import type { ShadowTree } from '@/tree/ShadowTree';
+import type { ShadowTree } from '#tree/ShadowTree';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-tree

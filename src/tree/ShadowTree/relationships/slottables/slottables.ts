@@ -1,5 +1,5 @@
-import OrderedSet from '@/infra/OrderedSet';
-import type { Slot } from '@/tree/ShadowTree/relationships/slots';
+import OrderedSet from '#infra/OrderedSet';
+import type { Slot } from '#tree/ShadowTree/relationships/slots';
 
 export type Slottables = Text | Element;
 

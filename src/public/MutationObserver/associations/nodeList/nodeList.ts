@@ -1,4 +1,4 @@
-import List from '@/infra/List';
+import List from '#infra/List';
 
 /**
  * @see https://dom.spec.whatwg.org/#mutationobserver-node-list

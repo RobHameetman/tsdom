@@ -1,4 +1,4 @@
-import Queue from '@/infra/Queue';
+import Queue from '#infra/Queue';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-mo-queue

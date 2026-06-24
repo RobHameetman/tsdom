@@ -1,8 +1,8 @@
-import { isDescendantOf } from '@/nodes/mixins/ChildNode/algorithms/isDescendantOf';
-import type { ChildOf } from '@/nodes/mixins/ChildNode/algorithms/isChildOf';
-import { isParentNode } from '@/nodes/mixins/ParentNode';
-import isParentOf from '@/nodes/mixins/ParentNode/algorithms/isParentOf';
-import type { RootNode } from '@/nodes/tree/Node/algorithms/isRootNode/isRootNode';
+import { isDescendantOf } from '#nodes/mixins/ChildNode/algorithms/isDescendantOf';
+import type { ChildOf } from '#nodes/mixins/ChildNode/algorithms/isChildOf';
+import { isParentNode } from '#nodes/mixins/ParentNode';
+import isParentOf from '#nodes/mixins/ParentNode/algorithms/isParentOf';
+import type { RootNode } from '#nodes/tree/Node/algorithms/isRootNode/isRootNode';
 
 export type AncestorOf<N extends Node = Node> =
 	N extends RootNode

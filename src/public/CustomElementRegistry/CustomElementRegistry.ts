@@ -1,11 +1,11 @@
-import validCustomElementName from '@/algorithms/validCustomElementName';
-import NotSupportedError from '@/errors/NotSupportedError';
-import SyntaxError from '@/errors/SyntaxError';
-import { customElementConstructorOf, customElementDefinitionSetHasConstructor, customElementDefinitionSetHasName, customElementDefinitionSetOf, customElementNameOf, disposeCustomElementDefinitionSetOf } from '@/public/CustomElementRegistry/associations/customElementDefinitionSet';
-import { disposeElementDefinitionIsRunningOf, elementDefinitionIsRunningOf, setElementDefinitionIsRunningOf } from '@/public/CustomElementRegistry/associations/elementDefinitionIsRunning';
-import { disposeIsScopedOf, isScopedOf, setIsScopedOf } from '@/public/CustomElementRegistry/associations/isScoped';
-import { disposeScopedDocumentSetOf } from '@/public/CustomElementRegistry/associations/scopedDocumentSet';
-import { disposeWhenDefinedPromiseMapOf } from '@/public/CustomElementRegistry/associations/whenDefinedPromiseMap';
+import validCustomElementName from '#algorithms/validCustomElementName';
+import NotSupportedError from '#errors/NotSupportedError';
+import SyntaxError from '#errors/SyntaxError';
+import { customElementConstructorOf, customElementDefinitionSetHasConstructor, customElementDefinitionSetHasName, customElementDefinitionSetOf, customElementNameOf, disposeCustomElementDefinitionSetOf } from '#public/CustomElementRegistry/associations/customElementDefinitionSet';
+import { disposeElementDefinitionIsRunningOf, elementDefinitionIsRunningOf, setElementDefinitionIsRunningOf } from '#public/CustomElementRegistry/associations/elementDefinitionIsRunning';
+import { disposeIsScopedOf, isScopedOf, setIsScopedOf } from '#public/CustomElementRegistry/associations/isScoped';
+import { disposeScopedDocumentSetOf } from '#public/CustomElementRegistry/associations/scopedDocumentSet';
+import { disposeWhenDefinedPromiseMapOf } from '#public/CustomElementRegistry/associations/whenDefinedPromiseMap';
 
 /**
  * Stores a list of states for an autonomous custom element, and allows states

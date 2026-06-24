@@ -1,13 +1,13 @@
-// import implOf from '@/_internals/impl';
-import IndexSizeError from '@/errors/IndexSizeError';
-import InvalidNodeTypeError from '@/errors/InvalidNodeTypeError';
-import NotSupportedError from '@/errors/NotSupportedError';
-import type { BoundaryPoint } from '@/public/AbstractRange/types/BoundaryPoint';
-import AbstractRange from '@/public/AbstractRange';
-import { endOf, setEndOf } from '@/public/AbstractRange/boundaries/end';
-import { setStartOf, startOf } from '@/public/AbstractRange/boundaries/start';
-import { indexOf, isInclusiveDescendantOf } from '@/tree/Tree/relationships';
-import lengthOf from '@/tree/NodeTree/algorithms/length';
+// import implOf from '#_internals/impl';
+import IndexSizeError from '#errors/IndexSizeError';
+import InvalidNodeTypeError from '#errors/InvalidNodeTypeError';
+import NotSupportedError from '#errors/NotSupportedError';
+import type { BoundaryPoint } from '#public/AbstractRange/types/BoundaryPoint';
+import AbstractRange from '#public/AbstractRange';
+import { endOf, setEndOf } from '#public/AbstractRange/boundaries/end';
+import { setStartOf, startOf } from '#public/AbstractRange/boundaries/start';
+import { indexOf, isInclusiveDescendantOf } from '#tree/Tree/relationships';
+import lengthOf from '#tree/NodeTree/algorithms/length';
 
 export enum RangePointComparison {
 	START_TO_START = 0,

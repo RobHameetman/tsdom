@@ -1,4 +1,4 @@
-// import type { USVString } from '@/_internals/webidl/USVString';
+// import type { USVString } from '#_internals/webidl/USVString';
 
 /**
  * @see https://w3c.github.io/trusted-types/dist/spec/#trustedscripturl-data

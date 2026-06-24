@@ -1,7 +1,7 @@
-import { OrderedSet } from '@/infra/OrderedSet';
-import { ancestorsOf, isAncestorOf, parentOf, removeParentOf, rootOf, setAsParent } from '@/tree/Tree/relationships/parents';
-import { inclusiveSiblingsOf, nextSiblingOf, previousSiblingOf, removeSiblingOf, setSiblings } from '@/tree/Tree/relationships/siblings';
-import { treeOrderHasChangedFor } from '@/tree/Tree/traversal/order';
+import { OrderedSet } from '#infra/OrderedSet';
+import { ancestorsOf, isAncestorOf, parentOf, removeParentOf, rootOf, setAsParent } from '#tree/Tree/relationships/parents';
+import { inclusiveSiblingsOf, nextSiblingOf, previousSiblingOf, removeSiblingOf, setSiblings } from '#tree/Tree/relationships/siblings';
+import { treeOrderHasChangedFor } from '#tree/Tree/traversal/order';
 
 /**
  * An object A whose parent is object B is a child of B.

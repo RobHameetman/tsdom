@@ -1,9 +1,9 @@
-// import implOf from '@/_internals/impl';
-import { isSlottable } from '@/mixins/Slottable';
-import { setGetTheParentOf } from '@/public/EventTarget/associations/getTheParent';
-import CharacterData from '@/public/CharacterData';
-import { setDataOf } from '@/public/CharacterData/associations/data';
-import { initializeNodeDocumentOf } from '@/public/Node/associations/nodeDocument';
+// import implOf from '#_internals/impl';
+import { isSlottable } from '#mixins/Slottable';
+import { setGetTheParentOf } from '#public/EventTarget/associations/getTheParent';
+import CharacterData from '#public/CharacterData';
+import { setDataOf } from '#public/CharacterData/associations/data';
+import { initializeNodeDocumentOf } from '#public/Node/associations/nodeDocument';
 
 /**
  * Represents textual notations within markup; although it is generally not

@@ -1,5 +1,5 @@
-import type List from '@/infra/List';
-import type { Slottables } from '@/nodes/mixins/Slottable';
+import type List from '#infra/List';
+import type { Slottables } from '#nodes/mixins/Slottable';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes

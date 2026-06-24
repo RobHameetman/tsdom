@@ -1,5 +1,5 @@
-import List from '@/infra/List';
-import { rootOf } from '@/tree/Tree/relationships/parents';
+import List from '#infra/List';
+import { rootOf } from '#tree/Tree/relationships/parents';
 
 /**
  * Algorithms that modify a tree modify live ranges associated with that tree.

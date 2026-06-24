@@ -1,12 +1,12 @@
-import EventFlag, { isFlagSetFor, setFlagsOf } from '@/public/Event/associations/flags';
-import { type Path, lastPathOf } from '@/public/Event/associations/path';
-import { setTouchTargetListOf } from '@/public/Event/associations/touchTargetList';
-import { setTargetOf } from '@/public/Event/associations/target';
-import { setRelatedTargetOf } from '@/public/Event/associations/relatedTarget';
-import { initializeCurrentTargetOf } from '@/public/Event/attributes/currentTarget';
-import { setTypeOf } from '@/public/Event/attributes/type';
-import innerInvoke from '@/public/EventTarget/algorithms/innerInvoke';
-import { eventListenerListFor } from '@/public/EventTarget/associations/eventListenerList';
+import EventFlag, { isFlagSetFor, setFlagsOf } from '#public/Event/associations/flags';
+import { type Path, lastPathOf } from '#public/Event/associations/path';
+import { setTouchTargetListOf } from '#public/Event/associations/touchTargetList';
+import { setTargetOf } from '#public/Event/associations/target';
+import { setRelatedTargetOf } from '#public/Event/associations/relatedTarget';
+import { initializeCurrentTargetOf } from '#public/Event/attributes/currentTarget';
+import { setTypeOf } from '#public/Event/attributes/type';
+import innerInvoke from '#public/EventTarget/algorithms/innerInvoke';
+import { eventListenerListFor } from '#public/EventTarget/associations/eventListenerList';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-event-listener-invoke

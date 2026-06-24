@@ -1,12 +1,12 @@
-import attachAShadowRoot from '@/public/Element/algorithms/attachAShadowRoot';
-import cloneASingleNode from '@/public/Node/algorithms/cloneASingleNode';
-import { declarativeOf, setDeclarativeOf } from '@/public/ShadowRoot/associations/declarative';
-import { delegatesFocusOf } from '@/public/ShadowRoot/associations/delegatesFocus';
-import { serializableOf } from '@/public/ShadowRoot/associations/serializable';
-import { customElementRegistryOf } from '@/public/ShadowRoot/associations/customElementRegistry';
-import { keepCustomElementRegistryNullOf, setKeepCustomElementRegistryNullOf } from '@/public/ShadowRoot/associations/keepCustomElementRegistryNull';
-import { slotAssignmentOf } from '@/public/ShadowRoot/associations/slotAssignment';
-import { isShadowHost } from '@/tree/ShadowTree/relationships/shadowRoots';
+import attachAShadowRoot from '#public/Element/algorithms/attachAShadowRoot';
+import cloneASingleNode from '#public/Node/algorithms/cloneASingleNode';
+import { declarativeOf, setDeclarativeOf } from '#public/ShadowRoot/associations/declarative';
+import { delegatesFocusOf } from '#public/ShadowRoot/associations/delegatesFocus';
+import { serializableOf } from '#public/ShadowRoot/associations/serializable';
+import { customElementRegistryOf } from '#public/ShadowRoot/associations/customElementRegistry';
+import { keepCustomElementRegistryNullOf, setKeepCustomElementRegistryNullOf } from '#public/ShadowRoot/associations/keepCustomElementRegistryNull';
+import { slotAssignmentOf } from '#public/ShadowRoot/associations/slotAssignment';
+import { isShadowHost } from '#tree/ShadowTree/relationships/shadowRoots';
 
 /**
  * Determines whether two nodes are equal.

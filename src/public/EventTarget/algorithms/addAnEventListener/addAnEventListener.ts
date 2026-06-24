@@ -1,6 +1,6 @@
-import { type Listener, eventListenerListFor } from '@/public/EventTarget/associations/eventListenerList';
-import defaultPassiveValue from '@/public/EventTarget/algorithms/defaultPassiveValue';
-import removeAnEventListener from '@/public/EventTarget/algorithms/removeAnEventListener';
+import { type Listener, eventListenerListFor } from '#public/EventTarget/associations/eventListenerList';
+import defaultPassiveValue from '#public/EventTarget/algorithms/defaultPassiveValue';
+import removeAnEventListener from '#public/EventTarget/algorithms/removeAnEventListener';
 
 /**
  * @see https://dom.spec.whatwg.org/#add-an-event-listener

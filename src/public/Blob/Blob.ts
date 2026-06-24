@@ -1,4 +1,7 @@
-import { isFunction, isNumber, isObject, isString } from '@com.robhameetman/utils';
+import isFunction from '#_internals/utils/functions/isFunction';
+import isNumber from '#_internals/utils/functions/isNumber';
+import isObject from '#_internals/utils/functions/isObject';
+import isString from '#_internals/utils/functions/isString';
 
 export const Blob = function(blobParts?: BlobPart[], options?: BlobPropertyBag) {
 	return Object.create(Object.prototype, {

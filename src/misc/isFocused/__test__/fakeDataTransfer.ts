@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
-import { fakeFileList } from '@/dom/files/isFileList/__test__';
-import { fakeDataTransferItemList } from '@/dom/misc/isDataTransferItemList/__test__';
+import { fakeFileList } from '#dom/files/isFileList/__test__';
+import { fakeDataTransferItemList } from '#dom/misc/isDataTransferItemList/__test__';
 
 export const fakeDataTransfer = ({
 	...overrideProps

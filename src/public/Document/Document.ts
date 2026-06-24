@@ -1,35 +1,34 @@
-import { DomNodeNamespace, isType, isUndefined } from '@com.robhameetman/utils';
-import InvalidCharacterError from '@/errors/InvalidCharacterError';
-import NotSupportedError from '@/errors/NotSupportedError';
-// import implOf from '@/_internals/impl';
-import DomNodeType from '@/enums/DomNodeType';
-import Node from '@/public/Node';
-import { ELEMENT_CONSTRUCTOR_KEY } from '@/public/Element';
-import NonElementParentNode from '@/mixins/NonElementParentNode';
-import ParentNode from '@/mixins/ParentNode';
-import GlobalEventHandlers from '@/mixins/GlobalEventHandlers';
-import DocumentOrShadowRoot from '@/mixins/DocumentOrShadowRoot';
-import XPathEvaluatorBase from '@/mixins/XPathEvaluatorBase';
-import FontFaceSource from '@/mixins/FontFaceSource';
-import { setGetTheParentOf } from '@/public/EventTarget/associations/getTheParent';
-import validateAndExtract from '@/algorithms/validateAndExtract';
-import validAttributeLocalName from '@/public/Attr/algorithms/validAttributeLocalName';
-import { initializeLocalNameOf, initializeNamespaceOf, initializeNamespacePrefixOf } from '@/public/Attr/associations';
-import { disposeContentTypeOf } from '@/public/Document/associations/contentType';
-import { disposeEncodingOf } from '@/public/Document/associations/encoding';
-import { disposeModeOf, modeOf } from '@/public/Document/associations/mode';
-import { disposeOriginOf, initializeOriginOf } from '@/public/Document/associations/origin';
-import { disposeTypeOf, isAnHTMLDocument } from '@/public/Document/associations/type';
-import { disposeUrlOf, initializeUrlOf } from '@/public/Document/associations/url';
-import { disposeAllowDeclarativeShadowRootsOf } from '@/public/Document/associations/allowDeclarativeShadowRoots';
-import { disposeCustomElementRegistryOf } from '@/public/Document/associations/customElementRegistry';
-import { initializeNodeDocumentOf } from '@/public/Node/associations';
-import { setEndOf, setStartOf } from '@/public/AbstractRange/boundaries';
-import { initializeRootOf as setRootOfIterator, setFilterOf as setFilterOfIterator, setPointerBeforeReferenceFor, setReferenceOf, setWhatToShowOf as setWhatToShowOfIterator } from '@/public/NodeIterator/associations';
-import { initializeRootOf as setRootOfTreeWalker, setCurrentOf, setFilterOf as setFilterOfTreeWalker, setWhatToShowOf as setWhatToShowOfTreeWalker } from '@/public/TreeWalker/associations';
-import { createAnEvent } from '@/public/Event/algorithms';
-import { initializeTimeStampOf, initializeTypeOf, setIsTrustedToFalseFor } from '@/public/Event/attributes';
-import EventFlag, { unsetFlagsOf } from '@/public/Event/associations/flags';
+import Namespace from '#enums/Namespace';
+import InvalidCharacterError from '#errors/InvalidCharacterError';
+import NotSupportedError from '#errors/NotSupportedError';
+// import implOf from '#_internals/impl';
+import DomNodeType from '#enums/DomNodeType';
+import Node from '#public/Node';
+import NonElementParentNode from '#mixins/NonElementParentNode';
+import ParentNode from '#mixins/ParentNode';
+import GlobalEventHandlers from '#mixins/GlobalEventHandlers';
+import DocumentOrShadowRoot from '#mixins/DocumentOrShadowRoot';
+import XPathEvaluatorBase from '#mixins/XPathEvaluatorBase';
+import FontFaceSource from '#mixins/FontFaceSource';
+import { setGetTheParentOf } from '#public/EventTarget/associations/getTheParent';
+import validateAndExtract from '#algorithms/validateAndExtract';
+import validAttributeLocalName from '#public/Attr/algorithms/validAttributeLocalName';
+import { initializeLocalNameOf, initializeNamespaceOf, initializeNamespacePrefixOf } from '#public/Attr/associations';
+import { disposeContentTypeOf } from '#public/Document/associations/contentType';
+import { disposeEncodingOf } from '#public/Document/associations/encoding';
+import { disposeModeOf, modeOf } from '#public/Document/associations/mode';
+import { disposeOriginOf, initializeOriginOf } from '#public/Document/associations/origin';
+import { disposeTypeOf, isAnHTMLDocument } from '#public/Document/associations/type';
+import { disposeUrlOf, initializeUrlOf } from '#public/Document/associations/url';
+import { disposeAllowDeclarativeShadowRootsOf } from '#public/Document/associations/allowDeclarativeShadowRoots';
+import { disposeCustomElementRegistryOf } from '#public/Document/associations/customElementRegistry';
+import { initializeNodeDocumentOf } from '#public/Node/associations';
+import { setEndOf, setStartOf } from '#public/AbstractRange/boundaries';
+import { initializeRootOf as setRootOfIterator, setFilterOf as setFilterOfIterator, setPointerBeforeReferenceFor, setReferenceOf, setWhatToShowOf as setWhatToShowOfIterator } from '#public/NodeIterator/associations';
+import { initializeRootOf as setRootOfTreeWalker, setCurrentOf, setFilterOf as setFilterOfTreeWalker, setWhatToShowOf as setWhatToShowOfTreeWalker } from '#public/TreeWalker/associations';
+import { createAnEvent } from '#public/Event/algorithms';
+import { initializeTimeStampOf, initializeTypeOf, setIsTrustedToFalseFor } from '#public/Event/attributes';
+import EventFlag, { unsetFlagsOf } from '#public/Event/associations/flags';
 
 const withMixins = (prototype: Document) =>
 	DocumentOrShadowRoot(
@@ -1128,7 +1127,7 @@ Object.defineProperties(Document, {
 			 */
 			createElement: {
 				value<K extends keyof HTMLElementTagNameMap>(this: Document, tagName: K, _options?: ElementCreationOptions) {
-					return this.createElementNS(DomNodeNamespace.DEFAULT, tagName);
+					return this.createElementNS(Namespace.Default, tagName);
 				},
 				configurable: true,
 				enumerable: true,

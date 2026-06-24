@@ -1,4 +1,4 @@
-import type { ActivationBehavior } from '@/public/EventTarget/associations/activationBehavior';
+import type { ActivationBehavior } from '#public/EventTarget/associations/activationBehavior';
 
 /**
  * Each {@link EventTarget} object that has {@link ActivationBehavior}, can

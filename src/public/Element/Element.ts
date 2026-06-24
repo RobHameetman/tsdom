@@ -1,12 +1,12 @@
-import Node from '@/public/Node';
-import ARIAMixin from '@/mixins/ARIAMixin';
-import ChildNode from '@/mixins/ChildNode';
-import NonDocumentTypeChildNode from '@/mixins/NonDocumentTypeChildNode';
-import ParentNode from '@/mixins/ParentNode';
-import Animatable from '@/mixins/Animatable';
-import Slottable from '@/mixins/Slottable';
-import NamedNodeMap from '@/public/NamedNodeMap';
-import { disposeShadowRootOf, shadowRootOf } from '@/public/Element/associations/shadowRoot';
+import Node from '#public/Node';
+import ARIAMixin from '#mixins/ARIAMixin';
+import ChildNode from '#mixins/ChildNode';
+import NonDocumentTypeChildNode from '#mixins/NonDocumentTypeChildNode';
+import ParentNode from '#mixins/ParentNode';
+import Animatable from '#mixins/Animatable';
+import Slottable from '#mixins/Slottable';
+import NamedNodeMap from '#public/NamedNodeMap';
+import { disposeShadowRootOf, shadowRootOf } from '#public/Element/associations/shadowRoot';
 
 const withMixins = (prototype: HTMLElement) =>
 	ARIAMixin(

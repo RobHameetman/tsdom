@@ -1,7 +1,7 @@
-import { type List, isList } from '@/infra/List';
-import { type OrderedSet, isOrderedSet } from '@/infra/OrderedSet';
-import { type Queue, isQueue } from '@/infra/Queue';
-import { type Stack, isStack } from '@/infra/Stack';
+import { type List, isList } from '#infra/List';
+import { type OrderedSet, isOrderedSet } from '#infra/OrderedSet';
+import { type Queue, isQueue } from '#infra/Queue';
+import { type Stack, isStack } from '#infra/Stack';
 
 /**
  * The {@link Sequence<T>} type is a parameterized type whose values are

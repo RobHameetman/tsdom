@@ -1,5 +1,5 @@
-import lookUpACustomElementDefinition from '@/public/CustomElementRegistry/algorithms/lookUpACustomElementDefinition';
-import lookUpACustomElementRegistry from '@/public/CustomElementRegistry/algorithms/lookUpACustomElementRegistry';
+import lookUpACustomElementDefinition from '#public/CustomElementRegistry/algorithms/lookUpACustomElementDefinition';
+import lookUpACustomElementRegistry from '#public/CustomElementRegistry/algorithms/lookUpACustomElementRegistry';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-create-element

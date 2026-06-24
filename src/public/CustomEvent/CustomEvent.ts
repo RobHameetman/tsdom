@@ -1,8 +1,8 @@
-import initialize from '@/public/Event/algorithms/initialize';
-import innerEventCreation from '@/public/Event/algorithms/innerEventCreation';
-import { EventFlag, isFlagSetFor } from '@/public/Event/associations/flags';
-import { setTypeOf } from '@/public/Event/attributes/type';
-import { detailOf, setDetailOf } from '@/public/CustomEvent/attributes/detail';
+import initialize from '#public/Event/algorithms/initialize';
+import innerEventCreation from '#public/Event/algorithms/innerEventCreation';
+import { EventFlag, isFlagSetFor } from '#public/Event/associations/flags';
+import { setTypeOf } from '#public/Event/attributes/type';
+import { detailOf, setDetailOf } from '#public/CustomEvent/attributes/detail';
 
 export const CustomEvent = function<T = unknown>(this: CustomEvent<T>, type: string, eventInitDict = {} as EventInit) {
 	const event = innerEventCreation(

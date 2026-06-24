@@ -1,6 +1,6 @@
-// import implOf from '@/_internals/impl';
-import Node from '@/public/Node';
-import ChildNode, { asChildNode } from '@/mixins/ChildNode';
+// import implOf from '#_internals/impl';
+import Node from '#public/Node';
+import ChildNode, { asChildNode } from '#mixins/ChildNode';
 
 const withMixins = (prototype: DocumentType) =>
 	asChildNode(prototype);

@@ -1,12 +1,12 @@
-// import implOf from '@/_internals/impl';
-import Node from '@/public/Node';
-import setAnExistingAttributeValue from '@/public/Attr/algorithms/setAnExistingAttributeValue';
-import { disposeElementOf, elementOf } from '@/public/Attr/associations/element';
-import { disposeLocalNameOf, localNameOf } from '@/public/Attr/associations/localName';
-import { disposeNamespaceOf, namespaceOf } from '@/public/Attr/associations/namespace';
-import { disposeNamespacePrefixOf, namespacePrefixOf } from '@/public/Attr/associations/namespacePrefix';
-import { disposeQualifiedNameOf, qualifiedNameOf } from '@/public/Attr/associations/qualifiedName';
-import { disposeValueOf, valueOf } from '@/public/Attr/associations/value';
+// import implOf from '#_internals/impl';
+import Node from '#public/Node';
+import setAnExistingAttributeValue from '#public/Attr/algorithms/setAnExistingAttributeValue';
+import { disposeElementOf, elementOf } from '#public/Attr/associations/element';
+import { disposeLocalNameOf, localNameOf } from '#public/Attr/associations/localName';
+import { disposeNamespaceOf, namespaceOf } from '#public/Attr/associations/namespace';
+import { disposeNamespacePrefixOf, namespacePrefixOf } from '#public/Attr/associations/namespacePrefix';
+import { disposeQualifiedNameOf, qualifiedNameOf } from '#public/Attr/associations/qualifiedName';
+import { disposeValueOf, valueOf } from '#public/Attr/associations/value';
 
 export const Attr = function(this: Attr) {
 	throw new TypeError('Failed to construct \'Attr\': Illegal constructor');

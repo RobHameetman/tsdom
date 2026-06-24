@@ -1,5 +1,5 @@
-import removeAnEventListener from '@/public/EventTarget/algorithms/removeAnEventListener';
-import { eventHandlerMapOf } from '@/public/EventTarget/associations/eventHandlerMap';
+import removeAnEventListener from '#public/EventTarget/algorithms/removeAnEventListener';
+import { eventHandlerMapOf } from '#public/EventTarget/associations/eventHandlerMap';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/webappapis.html#deactivate-an-event-handler

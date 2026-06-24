@@ -1,5 +1,5 @@
-import signalSlots from '@/agent/__SIGNAL_SLOTS__';
-import queueAMutationObserverMicrotask from '@/public/MutationObserver/algorithms/queueAMutationObserverMicrotask';
+import signalSlots from '#agent/__SIGNAL_SLOTS__';
+import queueAMutationObserverMicrotask from '#public/MutationObserver/algorithms/queueAMutationObserverMicrotask';
 
 /**
  * @see https://dom.spec.whatwg.org/#signal-a-slot-change

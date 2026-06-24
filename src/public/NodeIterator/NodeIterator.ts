@@ -1,11 +1,11 @@
-import implOf from '@/_internals/impl';
-import traverse from '@/public/NodeIterator/algorithms/traverse';
-import { disposeFilterOf, filterOf, initializeFilterOf } from '@/public/NodeIterator/associations/filter';
-import { disposeIteratorCollectionOf } from '@/public/NodeIterator/associations/iteratorCollection';
-import { disposePointerBeforeReferenceOf, pointerBeforeReferenceOf } from '@/public/NodeIterator/associations/pointerBeforeReference';
-import { disposeReferenceOf, referenceOf } from '@/public/NodeIterator/associations/reference';
-import { disposeRootOf, rootOf } from '@/public/NodeIterator/associations/root';
-import { disposeWhatToShowOf, whatToShowOf } from '@/public/NodeIterator/associations/whatToShow';
+import implOf from '#_internals/impl';
+import traverse from '#public/NodeIterator/algorithms/traverse';
+import { disposeFilterOf, filterOf, initializeFilterOf } from '#public/NodeIterator/associations/filter';
+import { disposeIteratorCollectionOf } from '#public/NodeIterator/associations/iteratorCollection';
+import { disposePointerBeforeReferenceOf, pointerBeforeReferenceOf } from '#public/NodeIterator/associations/pointerBeforeReference';
+import { disposeReferenceOf, referenceOf } from '#public/NodeIterator/associations/reference';
+import { disposeRootOf, rootOf } from '#public/NodeIterator/associations/root';
+import { disposeWhatToShowOf, whatToShowOf } from '#public/NodeIterator/associations/whatToShow';
 
 /**
  * {@link NodeIterator} objects can be used to filter and traverse node trees.

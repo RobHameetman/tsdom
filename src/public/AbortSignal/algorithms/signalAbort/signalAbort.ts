@@ -1,9 +1,9 @@
-import AbortError from '@/errors/AbortError';
-import List from '@/infra/List';
-import { setAbortReasonOf } from '@/public/AbortSignal/associations/abortReason';
-import { dependentSignalsOf } from '@/public/AbortSignal/associations/dependentSignals';
-import aborted from '@/public/AbortSignal/algorithms/aborted';
-import runTheAbortSteps from '@/public/AbortSignal/algorithms/runTheAbortSteps';
+import AbortError from '#errors/AbortError';
+import List from '#infra/List';
+import { setAbortReasonOf } from '#public/AbortSignal/associations/abortReason';
+import { dependentSignalsOf } from '#public/AbortSignal/associations/dependentSignals';
+import aborted from '#public/AbortSignal/algorithms/aborted';
+import runTheAbortSteps from '#public/AbortSignal/algorithms/runTheAbortSteps';
 
 /**
  * @see https://dom.spec.whatwg.org/#abortsignal-signal-abort

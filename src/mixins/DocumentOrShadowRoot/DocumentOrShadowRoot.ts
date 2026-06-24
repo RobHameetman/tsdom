@@ -1,4 +1,5 @@
-import { isObject, isUndefined } from '@com.robhameetman/utils';
+import isObject from '#_internals/utils/functions/isObject';
+import isUndefined from '#_internals/utils/functions/isUndefined';
 
 export const DocumentOrShadowRoot = <T extends Node | DocumentFragment = Node>(prototype: T) =>
 	Object.defineProperties(prototype, {

@@ -1,4 +1,4 @@
-import queueAMutationRecord from '@/public/MutationRecord/algorithms/queueAMutationRecord';
+import queueAMutationRecord from '#public/MutationRecord/algorithms/queueAMutationRecord';
 
 /**
  * Queues a tree mutation record for all interested mutation observers.

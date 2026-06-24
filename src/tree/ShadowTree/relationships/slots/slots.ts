@@ -1,6 +1,6 @@
-import OrderedSet from '@/infra/OrderedSet';
-import type { Slottables } from '@/tree/ShadowTree/relationships/slottables';
-import type { Slot } from '@/tree/ShadowTree/types/Slot';
+import OrderedSet from '#infra/OrderedSet';
+import type { Slottables } from '#tree/ShadowTree/relationships/slottables';
+import type { Slot } from '#tree/ShadowTree/types/Slot';
 
 const names = new WeakMap<Slot, string>();
 const assignedNodes = new WeakMap<Slot, OrderedSet<Slottables>>();

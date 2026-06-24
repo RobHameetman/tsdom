@@ -1,6 +1,6 @@
-import { elementOf, setElementOf } from '@/public/Attr/associations/element';
-import { attributeListOf } from '@/public/Element/associations/attributeList';
-import handleAttributeChanges from '@/public/Element/attributes/handleAttributeChanges';
+import { elementOf, setElementOf } from '#public/Attr/associations/element';
+import { attributeListOf } from '#public/Element/associations/attributeList';
+import handleAttributeChanges from '#public/Element/attributes/handleAttributeChanges';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-remove

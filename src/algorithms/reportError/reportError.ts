@@ -1,4 +1,4 @@
-import reportAnException from '@/algorithms/reportAnException';
+import reportAnException from '#algorithms/reportAnException';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/webappapis.html#dom-reporterror

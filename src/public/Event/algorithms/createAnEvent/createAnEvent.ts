@@ -1,5 +1,5 @@
-import innerEventCreation from '@/public/Event/algorithms/innerEventCreation';
-import { initializeIsTrustedToTrue } from '@/public/Event/attributes/isTrusted';
+import innerEventCreation from '#public/Event/algorithms/innerEventCreation';
+import { initializeIsTrustedToTrue } from '#public/Event/attributes/isTrusted';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-event-create

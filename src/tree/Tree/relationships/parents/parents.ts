@@ -1,5 +1,5 @@
-import OrderedSet from '@/infra/OrderedSet';
-import { treeOrderHasChangedFor } from '@/tree/Tree/traversal/order';
+import OrderedSet from '#infra/OrderedSet';
+import { treeOrderHasChangedFor } from '#tree/Tree/traversal/order';
 
 /**
  * An object A whose child is object B is a parent of B.

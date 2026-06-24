@@ -1,7 +1,7 @@
-import List, { type ReadonlyList } from '@/infra/List';
-import OrderedSet, { type ReadonlyOrderedSet } from '@/infra/OrderedSet';
-import Queue, { type ReadonlyQueue } from '@/infra/Queue';
-import Stack, { type ReadonlyStack } from '@/infra/Stack';
+import List, { type ReadonlyList } from '#infra/List';
+import OrderedSet, { type ReadonlyOrderedSet } from '#infra/OrderedSet';
+import Queue, { type ReadonlyQueue } from '#infra/Queue';
+import Stack, { type ReadonlyStack } from '#infra/Stack';
 
 export type ListLike<T = unknown> =
 	| Array<T>

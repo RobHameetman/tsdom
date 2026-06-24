@@ -1,5 +1,5 @@
-import type { PotentialEventTarget } from '@/public/EventTarget';
-import { isShadowIncludingInclusiveAncestorOf } from '@/tree/ShadowTree/relationships/shadowRoots';
+import type { PotentialEventTarget } from '#public/EventTarget';
+import { isShadowIncludingInclusiveAncestorOf } from '#tree/ShadowTree/relationships/shadowRoots';
 
 /**
  * The retargeting algorithm is used by event dispatch as well as other

@@ -1,15 +1,15 @@
-import List from '@/infra/List';
-import initialize from '@/public/Event/algorithms/initialize';
-import innerEventCreation from '@/public/Event/algorithms/innerEventCreation';
-import { EventFlag, isFlagSetFor, isFlagUnsetFor, setFlagsOf } from '@/public/Event/associations/flags';
-import { pathOf } from '@/public/Event/associations/path';
-import { targetOf } from '@/public/Event/associations/target';
-import { canBubble } from '@/public/Event/attributes/bubbles';
-import { isCancelable } from '@/public/Event/attributes/cancelable';
-import { currentTargetOf } from '@/public/Event/attributes/currentTarget';
-import { EventPhase, eventPhaseOf } from '@/public/Event/attributes/eventPhase';
-import { timeStampOf } from '@/public/Event/attributes/timeStamp';
-import { typeOf, initializeTypeOf } from '@/public/Event/attributes/type';
+import List from '#infra/List';
+import initialize from '#public/Event/algorithms/initialize';
+import innerEventCreation from '#public/Event/algorithms/innerEventCreation';
+import { EventFlag, isFlagSetFor, isFlagUnsetFor, setFlagsOf } from '#public/Event/associations/flags';
+import { pathOf } from '#public/Event/associations/path';
+import { targetOf } from '#public/Event/associations/target';
+import { canBubble } from '#public/Event/attributes/bubbles';
+import { isCancelable } from '#public/Event/attributes/cancelable';
+import { currentTargetOf } from '#public/Event/attributes/currentTarget';
+import { EventPhase, eventPhaseOf } from '#public/Event/attributes/eventPhase';
+import { timeStampOf } from '#public/Event/attributes/timeStamp';
+import { typeOf, initializeTypeOf } from '#public/Event/attributes/type';
 
 export const Event = function(this: Event, type: string, eventInitDict = {} as EventInit) {
 	const event = innerEventCreation(

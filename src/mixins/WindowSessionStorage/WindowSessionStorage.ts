@@ -1,4 +1,6 @@
-import { isFunction, isObject, isUndefined } from '@com.robhameetman/utils';
+import isFunction from '#_internals/utils/functions/isFunction';
+import isObject from '#_internals/utils/functions/isObject';
+import isUndefined from '#_internals/utils/functions/isUndefined';
 
 export const WindowSessionStorage = <T>(prototype: T) =>
 	Object.defineProperties(prototype, {

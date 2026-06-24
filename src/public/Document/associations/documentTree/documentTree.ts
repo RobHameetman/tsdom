@@ -1,4 +1,4 @@
-// import type { DocumentTree } from '@/tree/DocumentTree';
+// import type { DocumentTree } from '#tree/DocumentTree';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-tree

@@ -1,10 +1,10 @@
-import { noop } from '@com.robhameetman/utils';
-import NotSupportedError from '@/errors/NotSupportedError';
-import ElementContentEditable from '@/mixins/ElementContentEditable';
-import ElementCSSInlineStyle from '@/mixins/ElementCSSInlineStyle';
-import HTMLOrSVGElement from '@/mixins/HTMLOrSVGElement';
-import GlobalEventHandlers from '@/mixins/GlobalEventHandlers';
-import Element from '@/public/Element';
+import noop from '#_internals/utils/functions/noop';
+import NotSupportedError from '#errors/NotSupportedError';
+import ElementContentEditable from '#mixins/ElementContentEditable';
+import ElementCSSInlineStyle from '#mixins/ElementCSSInlineStyle';
+import HTMLOrSVGElement from '#mixins/HTMLOrSVGElement';
+import GlobalEventHandlers from '#mixins/GlobalEventHandlers';
+import Element from '#public/Element';
 
 const _handleDefaultAction = ($this: HTMLAnchorElement, event: Event) => {
 	if (!event.defaultPrevented) {

@@ -1,7 +1,7 @@
-import { setElementOf } from '@/public/Attr/associations/element';
-import { attributeListOf } from '@/public/Element/associations/attributeList';
-import { setNodeDocumentOf } from '@/public/Node/associations/nodeDocument';
-import handleAttributeChanges from '@/public/Element/attributes/handleAttributeChanges';
+import { setElementOf } from '#public/Attr/associations/element';
+import { attributeListOf } from '#public/Element/associations/attributeList';
+import { setNodeDocumentOf } from '#public/Node/associations/nodeDocument';
+import handleAttributeChanges from '#public/Element/attributes/handleAttributeChanges';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-append

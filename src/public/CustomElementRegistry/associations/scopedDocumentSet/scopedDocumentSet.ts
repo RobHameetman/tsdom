@@ -1,4 +1,4 @@
-import OrderedSet from '@/infra/OrderedSet';
+import OrderedSet from '#infra/OrderedSet';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/custom-elements.html#scoped-document-set

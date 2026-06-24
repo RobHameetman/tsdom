@@ -1,6 +1,6 @@
-import Namespace from '@/enums/Namespace';
-import { qualifiedNameOf } from '@/public/Attr/associations/qualifiedName';
-import { attributeListOf } from '@/public/Element/associations/attributeList';
+import Namespace from '#enums/Namespace';
+import { qualifiedNameOf } from '#public/Attr/associations/qualifiedName';
+import { attributeListOf } from '#public/Element/associations/attributeList';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-get-by-name

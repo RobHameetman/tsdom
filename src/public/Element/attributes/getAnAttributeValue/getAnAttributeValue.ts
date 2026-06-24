@@ -1,4 +1,4 @@
-import getAnAttributeByNamespaceAndLocalName from '@/public/Element/attributes/getAnAttributeByNamespaceAndLocalName';
+import getAnAttributeByNamespaceAndLocalName from '#public/Element/attributes/getAnAttributeByNamespaceAndLocalName';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-get-value

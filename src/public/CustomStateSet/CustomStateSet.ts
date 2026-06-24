@@ -1,6 +1,3 @@
-import { isObject, isType, isUndefined } from '@com.robhameetman/utils';
-import { isNode } from '@/nodes/functions/Node';
-
 /**
  * Stores a list of states for an autonomous custom element, and allows states
  * to be added and removed from the set. The interface can be used to expose the
@@ -29,20 +26,17 @@ export const CustomStateSet = function(states?: Iterable<string> | null | undefi
 };
 
 /**
- * Checks that an `unknown` value is a {@link NodeList}.
+ * Checks that an `unknown` value is a {@link CustomStateSet}.
  *
  * Requirements:
- *   - `value` must be a valid instance of `NodeList` or an object whose values are `Node`s.
+ *   - `value` must be a valid instance of `CustomStateSet` or an object whose values are `Node`s.
  *
  * @param value - An `unknown` value.
  *
- * @returns The determination that `value` is or is not a {@link NodeList}.
+ * @returns The determination that `value` is or is not a {@link CustomStateSet}.
  */
-export const isNodeList = (value: unknown): value is NodeList =>
-	/**
-	 * value
-	 */
-	(!isUndefined(window) && value instanceof NodeList) ||
-	isType<NodeList>('NodeList', value);
+export const isCustomStateSet = (value: unknown): value is CustomStateSet =>
+	typeof globalThis.CustomStateSet !== 'undefined' &&
+	value instanceof globalThis.CustomStateSet;
 
 export default CustomStateSet;

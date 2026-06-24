@@ -1,4 +1,4 @@
-import UNLOCKED_CONSTRUCTORS from '@/_internals/constants/UNLOCKED_CONSTRUCTORS';
+import UNLOCKED_CONSTRUCTORS from '#_internals/constants/UNLOCKED_CONSTRUCTORS';
 
 /**
  * A type for constructors in general.

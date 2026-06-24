@@ -1,6 +1,6 @@
-import isRootNode from '@/nodes/tree/Node/algorithms/isRootNode';
-import { isChildNode } from '@/nodes/mixins/ChildNode';
-import type { SiblingOf } from '@/nodes/mixins/ChildNode/algorithms/isSiblingOf';
+import isRootNode from '#nodes/tree/Node/algorithms/isRootNode';
+import { isChildNode } from '#nodes/mixins/ChildNode';
+import type { SiblingOf } from '#nodes/mixins/ChildNode/algorithms/isSiblingOf';
 
 /**
  * An inclusive sibling is an object or one of its siblings.

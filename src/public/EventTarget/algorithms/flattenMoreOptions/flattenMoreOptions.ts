@@ -1,5 +1,5 @@
-import { isObject } from '@com.robhameetman/utils';
-import flattenOptions from '@/public/EventTarget/algorithms/flattenOptions';
+import isObject from '#_internals/utils/functions/isObject';
+import flattenOptions from '#public/EventTarget/algorithms/flattenOptions';
 
 /**
  * @see https://dom.spec.whatwg.org/#event-flatten-more

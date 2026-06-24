@@ -1,5 +1,4 @@
-import { isType } from '@com.robhameetman/utils';
-import Tree from '@/tree/Tree';
+import Tree from '#tree/Tree';
 
 /**
  * Nodes are objects that implement {@link Node}. Nodes participate in a tree,

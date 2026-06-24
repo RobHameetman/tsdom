@@ -1,4 +1,4 @@
-import host, { type DocumentFragmentHost } from '@/public/DocumentFragment/associations/host';
+import host, { type DocumentFragmentHost } from '#public/DocumentFragment/associations/host';
 
 /**
  * @see https://dom.spec.whatwg.org/#shadowroot-slot-assignment

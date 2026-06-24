@@ -1,9 +1,9 @@
-import type { ListLike } from '@/infra/ListLike';
-import OrderedSet, { type ReadonlyOrderedSet } from '@/infra/OrderedSet';
-import Stack from '@/infra/Stack';
-import { childrenOf } from '@/tree/Tree/relationships/children';
-import { hostedBy, isHost } from '@/tree/Tree/relationships/hosts';
-import { rootOf } from '@/tree/Tree/relationships/parents';
+import type { ListLike } from '#infra/ListLike';
+import OrderedSet, { type ReadonlyOrderedSet } from '#infra/OrderedSet';
+import Stack from '#infra/Stack';
+import { childrenOf } from '#tree/Tree/relationships/children';
+import { hostedBy, isHost } from '#tree/Tree/relationships/hosts';
+import { rootOf } from '#tree/Tree/relationships/parents';
 
 /**
  * An object A whose parent is object B is a child of B.

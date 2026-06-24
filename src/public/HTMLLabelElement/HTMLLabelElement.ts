@@ -1,5 +1,5 @@
-import HTMLElement from '@/public/HTMLElement';
-import { disposeLabelledControlOf, labelledControlOf } from '@/public/HTMLLabelElement/associations/labelledControl';
+import HTMLElement from '#public/HTMLElement';
+import { disposeLabelledControlOf, labelledControlOf } from '#public/HTMLLabelElement/associations/labelledControl';
 
 export const HTMLLabelElement = function(this: HTMLLabelElement) {
 	throw new TypeError('Failed to construct \'HTMLLabelElement\': Illegal constructor');

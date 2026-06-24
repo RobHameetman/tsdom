@@ -1,6 +1,6 @@
-import enqueueACustomElementCallbackReaction from '@/public/CustomElementRegistry/algorithms/enqueueACustomElementCallbackReaction';
-import queueAMutationRecord from '@/public/MutationRecord/algorithms/queueAMutationRecord';
-import { runAttributeChangeStepsOf } from '@/public/Element/associations/attributeChangeSteps';
+import enqueueACustomElementCallbackReaction from '#public/CustomElementRegistry/algorithms/enqueueACustomElementCallbackReaction';
+import queueAMutationRecord from '#public/MutationRecord/algorithms/queueAMutationRecord';
+import { runAttributeChangeStepsOf } from '#public/Element/associations/attributeChangeSteps';
 
 /**
  * @see https://dom.spec.whatwg.org/#handle-attribute-changes

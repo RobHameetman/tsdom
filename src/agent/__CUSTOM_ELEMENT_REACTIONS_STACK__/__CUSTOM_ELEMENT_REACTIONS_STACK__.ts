@@ -1,5 +1,5 @@
-import Queue from '@/infra/Queue';
-import Stack from '@/infra/Stack';
+import Queue from '#infra/Queue';
+import Stack from '#infra/Stack';
 
 export type ElementQueue = Queue<Element>;
 export type CustomElementReactionsStack = Stack<ElementQueue>;

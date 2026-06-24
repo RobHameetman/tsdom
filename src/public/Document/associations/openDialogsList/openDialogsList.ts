@@ -1,4 +1,4 @@
-import List from '@/infra/List';
+import List from '#infra/List';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/dom.html#open-dialogs-list

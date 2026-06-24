@@ -1,10 +1,10 @@
-import List from '@/infra/List';
-import Queue from '@/infra/Queue';
-import Stack from '@/infra/Stack';
+import List from '#infra/List';
+import Queue from '#infra/Queue';
+import Stack from '#infra/Stack';
 import { Transform, type TransformOptions } from 'node:stream';
 import { ReadableStream, TransformStream } from 'node:stream/web';
-import CSSToken from '@/selectors/enums/CSSToken';
-import CodePoint from '@/selectors/enums/CodePoint';
+import CSSToken from '#selectors/enums/CSSToken';
+import CodePoint from '#selectors/enums/CodePoint';
 
 const EOF = -1;
 

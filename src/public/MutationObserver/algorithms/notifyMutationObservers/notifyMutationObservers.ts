@@ -1,13 +1,13 @@
-import type OrderedSet from '@/infra/OrderedSet';
-import type { Slot } from '@/tree/ShadowTree/relationships/slots';
-import { setMutationObserverMicrotaskQueuedToFalse } from '@/agent/__MUTATION_OBSERVER_MICROTASK_QUEUED__';
-import pendingMutationObservers from '@/agent/__PENDING_MUTATION_OBSERVERS__';
-import signalSlots from '@/agent/__SIGNAL_SLOTS__';
-import { recordQueueOf } from '@/public/MutationObserver/associations/recordQueue';
-import fireAnEvent from '@/public/Event/algorithms/fireAnEvent';
-import { invokeCallbackFor } from '@/public/MutationObserver/associations/callback';
-import { nodeListOf } from '@/public/MutationObserver/associations/nodeList';
-import { registeredObserversOf } from '@/public/Node/associations/registeredObserverList';
+import type OrderedSet from '#infra/OrderedSet';
+import type { Slot } from '#tree/ShadowTree/relationships/slots';
+import { setMutationObserverMicrotaskQueuedToFalse } from '#agent/__MUTATION_OBSERVER_MICROTASK_QUEUED__';
+import pendingMutationObservers from '#agent/__PENDING_MUTATION_OBSERVERS__';
+import signalSlots from '#agent/__SIGNAL_SLOTS__';
+import { recordQueueOf } from '#public/MutationObserver/associations/recordQueue';
+import fireAnEvent from '#public/Event/algorithms/fireAnEvent';
+import { invokeCallbackFor } from '#public/MutationObserver/associations/callback';
+import { nodeListOf } from '#public/MutationObserver/associations/nodeList';
+import { registeredObserversOf } from '#public/Node/associations/registeredObserverList';
 
 /**
  *

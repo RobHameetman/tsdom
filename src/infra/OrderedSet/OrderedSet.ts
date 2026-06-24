@@ -1,5 +1,5 @@
-import type { List } from '@/infra/List';
-import type { ListLike } from '@/infra/ListLike';
+import type { List } from '#infra/List';
+import type { ListLike } from '#infra/ListLike';
 
 /**
  * An alias for ordered sets returned by {@link Array.concat()}.

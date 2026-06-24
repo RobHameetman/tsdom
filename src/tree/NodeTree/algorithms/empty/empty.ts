@@ -1,4 +1,4 @@
-import length from '@/tree/NodeTree/algorithms/length';
+import length from '#tree/NodeTree/algorithms/length';
 
 /**
  * Checks if a node's {@link length()} is 0.

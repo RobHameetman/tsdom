@@ -1,5 +1,7 @@
-import { type TupleOf, isFunction, isObject } from '@com.robhameetman/utils';
-import implOf from '@/_internals/impl';
+import isFunction from '#_internals/utils/functions/isFunction';
+import isObject from '#_internals/utils/functions/isObject';
+import { type TupleOf } from '#_internals/utils/types/TupleOf';
+import implOf from '#_internals/impl';
 
 /**
  * A type alias for {@link NodeFilter} callbacks. Used in the `filter`

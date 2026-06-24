@@ -1,8 +1,8 @@
-import { isInclusiveAncestorOf } from '@/tree/Tree/relationships/parents';
-import { lastInclusiveDescendantOf } from '@/tree/Tree/relationships/children';
-import { pointerBeforeReferenceOf, setPointerBeforeReferenceToFalseFor } from '@/public/NodeIterator/associations/pointerBeforeReference';
-import { setReferenceOf } from '@/public/NodeIterator/associations/reference';
-import { isNodeIteratorsRoot } from '@/public/NodeIterator/associations/root';
+import { isInclusiveAncestorOf } from '#tree/Tree/relationships/parents';
+import { lastInclusiveDescendantOf } from '#tree/Tree/relationships/children';
+import { pointerBeforeReferenceOf, setPointerBeforeReferenceToFalseFor } from '#public/NodeIterator/associations/pointerBeforeReference';
+import { setReferenceOf } from '#public/NodeIterator/associations/reference';
+import { isNodeIteratorsRoot } from '#public/NodeIterator/associations/root';
 
 /**
  * @see https://dom.spec.whatwg.org/#live-range-pre-remove-steps

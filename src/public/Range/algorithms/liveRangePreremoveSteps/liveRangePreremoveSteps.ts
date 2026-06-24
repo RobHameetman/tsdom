@@ -1,5 +1,5 @@
-import { liveRangesOf } from '@/tree/Tree/associations/liveRanges';
-import { inclusiveDescendantsOf, indexOf } from '@/tree/Tree/relationships/children';
+import { liveRangesOf } from '#tree/Tree/associations/liveRanges';
+import { inclusiveDescendantsOf, indexOf } from '#tree/Tree/relationships/children';
 
 /**
  * Gets the root of a live {@link Range}.

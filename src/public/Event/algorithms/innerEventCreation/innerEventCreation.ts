@@ -1,7 +1,7 @@
-import { EventFlag, setFlagsOf, unsetFlagsOf } from '@/public/Event/associations/flags';
-import { setBubblabilityOf } from '@/public/Event/attributes/bubbles';
-import { setCancelabilityOf } from '@/public/Event/attributes/cancelable';
-import { initializeTimeStampOf } from '@/public/Event/attributes/timeStamp';
+import { EventFlag, setFlagsOf, unsetFlagsOf } from '#public/Event/associations/flags';
+import { setBubblabilityOf } from '#public/Event/attributes/bubbles';
+import { setCancelabilityOf } from '#public/Event/attributes/cancelable';
+import { initializeTimeStampOf } from '#public/Event/attributes/timeStamp';
 
 const attributes = {
 	bubbles: <E extends typeof global.Event = typeof global.Event>(event: InstanceType<E>, _: string, value: boolean) =>

@@ -1,4 +1,4 @@
-import { isBoolean } from '@com.robhameetman/utils';
+import isBoolean from '#_internals/utils/functions/isBoolean';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-flatten-options

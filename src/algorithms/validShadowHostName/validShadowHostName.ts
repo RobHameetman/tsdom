@@ -1,4 +1,4 @@
-import validCustomElementName from '@/algorithms/validCustomElementName';
+import validCustomElementName from '#algorithms/validCustomElementName';
 
 /**
  * Determines whether a string is a valid element local name.

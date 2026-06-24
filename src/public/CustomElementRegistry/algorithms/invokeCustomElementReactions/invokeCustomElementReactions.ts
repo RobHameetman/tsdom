@@ -1,5 +1,5 @@
-import type { ElementQueue } from '@/agent/__CUSTOM_ELEMENT_REACTIONS_STACK__';
-import { customElementReactionQueueOf } from '@/public/Element/associations/customElementReactionQueue';
+import type { ElementQueue } from '#agent/__CUSTOM_ELEMENT_REACTIONS_STACK__';
+import { customElementReactionQueueOf } from '#public/Element/associations/customElementReactionQueue';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/custom-elements.html#invoke-custom-element-reactions

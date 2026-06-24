@@ -1,9 +1,9 @@
-import OrderedSet from '@/infra/OrderedSet';
-import { abortReasonOf, setAbortReasonOf } from '@/public/AbortSignal/associations/abortReason';
-import { dependentSignalsOf } from '@/public/AbortSignal/associations/dependentSignals';
-import { sourceSignalsOf } from '@/public/AbortSignal/associations/sourceSignals';
-import { dependentOf, setDependentToTrueFor } from '@/public/AbortSignal/associations/dependent';
-import aborted from '@/public/AbortSignal/algorithms/aborted';
+import OrderedSet from '#infra/OrderedSet';
+import { abortReasonOf, setAbortReasonOf } from '#public/AbortSignal/associations/abortReason';
+import { dependentSignalsOf } from '#public/AbortSignal/associations/dependentSignals';
+import { sourceSignalsOf } from '#public/AbortSignal/associations/sourceSignals';
+import { dependentOf, setDependentToTrueFor } from '#public/AbortSignal/associations/dependent';
+import aborted from '#public/AbortSignal/algorithms/aborted';
 
 /**
  * @see https://dom.spec.whatwg.org/#create-a-dependent-abort-signal

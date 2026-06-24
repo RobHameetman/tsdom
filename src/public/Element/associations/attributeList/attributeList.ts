@@ -1,5 +1,5 @@
-import List from '@/infra/List';
-import NamedNodeMap from '@/public/NamedNodeMap';
+import List from '#infra/List';
+import NamedNodeMap from '#public/NamedNodeMap';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attribute

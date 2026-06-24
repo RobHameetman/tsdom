@@ -1,5 +1,5 @@
-import type { ParentOf } from '@/nodes/mixins/ParentNode/algorithms/isParentOf';
-import isAncestorOf, { type AncestorOf } from '@/nodes/mixins/ParentNode/algorithms/isAncestorOf';
+import type { ParentOf } from '#nodes/mixins/ParentNode/algorithms/isParentOf';
+import isAncestorOf, { type AncestorOf } from '#nodes/mixins/ParentNode/algorithms/isAncestorOf';
 
 /**
  * An inclusive ancestor is an object or one of its ancestors.

@@ -1,7 +1,7 @@
-import { InvalidNodeTypeError } from '@/errors/InvalidNodeTypeError';
-import AbstractRange from '@/public/AbstractRange';
-import { setEndOf } from '@/public/AbstractRange/boundaries/end';
-import { setStartOf } from '@/public/AbstractRange/boundaries/start';
+import { InvalidNodeTypeError } from '#errors/InvalidNodeTypeError';
+import AbstractRange from '#public/AbstractRange';
+import { setEndOf } from '#public/AbstractRange/boundaries/end';
+import { setStartOf } from '#public/AbstractRange/boundaries/start';
 
 /**
  * A {@link StaticRange} object is a lightweight range that represents a piece

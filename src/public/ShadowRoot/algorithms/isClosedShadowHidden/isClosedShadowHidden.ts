@@ -1,4 +1,4 @@
-import { isShadowRoot } from '@/webcomponents/ShadowRoot';
+import { isShadowRoot } from '#webcomponents/ShadowRoot';
 import isShadowIncludingInclusiveAncestorOf from '../isShadowIncludingInclusiveAncestorOf';
 
 /**

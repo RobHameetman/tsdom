@@ -1,4 +1,4 @@
-import InvalidCharacterError from '@/errors/InvalidCharacterError';
+import InvalidCharacterError from '#errors/InvalidCharacterError';
 
 export const WindowOrWorkerGlobalScope = <T>(prototype: T) =>
 	Object.defineProperties(prototype, {

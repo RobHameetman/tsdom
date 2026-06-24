@@ -1,6 +1,6 @@
-import deactivateAnEventHandler from '@/public/EventTarget/algorithms/deactivateAnEventHandler';
-import removeAllEventListeners from '@/public/EventTarget/algorithms/removeAllEventListeners';
-import { eventHandlerMapOf } from '@/public/EventTarget/associations/eventHandlerMap';
+import deactivateAnEventHandler from '#public/EventTarget/algorithms/deactivateAnEventHandler';
+import removeAllEventListeners from '#public/EventTarget/algorithms/removeAllEventListeners';
+import { eventHandlerMapOf } from '#public/EventTarget/associations/eventHandlerMap';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/webappapis.html#erase-all-event-listeners-and-handlers

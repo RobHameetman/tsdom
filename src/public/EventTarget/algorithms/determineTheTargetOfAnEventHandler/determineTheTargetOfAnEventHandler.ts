@@ -1,4 +1,4 @@
-import WindowEventHandlers from '@/mixins/WindowEventHandlers';
+import WindowEventHandlers from '#mixins/WindowEventHandlers';
 
 /**
  * @see https://dom.spec.whatwg.org/#default-passive-value

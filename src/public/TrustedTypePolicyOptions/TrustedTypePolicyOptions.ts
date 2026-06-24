@@ -1,7 +1,7 @@
-import { isObject } from '@com.robhameetman/utils';
-import { type CreateHTMLCallback, isCreateHTMLCallback } from '@/security/CreateHTMLCallback';
-import { type CreateScriptCallback, isCreateScriptCallback } from '@/security/CreateScriptCallback';
-import { type CreateScriptURLCallback, isCreateScriptURLCallback } from '@/security/CreateScriptURLCallback';
+import isObject from '#_internals/utils/functions/isObject';
+import { type CreateHTMLCallback, isCreateHTMLCallback } from '#security/CreateHTMLCallback';
+import { type CreateScriptCallback, isCreateScriptCallback } from '#security/CreateScriptCallback';
+import { type CreateScriptURLCallback, isCreateScriptURLCallback } from '#security/CreateScriptURLCallback';
 
 /**
  * Holds author-defined functions for converting string values into trusted

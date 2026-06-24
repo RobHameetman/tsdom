@@ -1,18 +1,18 @@
-import DocumentFragment from '@/public/DocumentFragment';
-import DocumentOrShadowRoot from '@/mixins/DocumentOrShadowRoot';
-import { rootOf } from '@/tree/Tree/relationships/parents';
-import { firstPathOf } from '@/public/Event/associations/path';
-import { setGetTheParentOf } from '@/public/EventTarget/associations/getTheParent';
-import { disposeAvailableToElementInternalsOf } from '@/public/ShadowRoot/associations/availableToElementInternals';
-import { clonableOf, disposeClonableOf } from '@/public/ShadowRoot/associations/clonable';
-import { disposeCustomElementRegistryOf } from '@/public/ShadowRoot/associations/customElementRegistry';
-import { disposeDeclarativeOf } from '@/public/ShadowRoot/associations/declarative';
-import { disposeDelegatesFocusOf, delegatesFocusOf } from '@/public/ShadowRoot/associations/delegatesFocus';
-import { disposeHostOf, hostOf } from '@/public/ShadowRoot/associations/host';
-import { disposeKeepCustomElementRegistryNullOf } from '@/public/ShadowRoot/associations/keepCustomElementRegistryNull';
-import { disposeModeOf, modeOf } from '@/public/ShadowRoot/associations/mode';
-import { disposeSerializableOf, serializableOf } from '@/public/ShadowRoot/associations/serializable';
-import { disposeSlotAssignmentOf, slotAssignmentOf } from '@/public/ShadowRoot/associations/slotAssignment';
+import DocumentFragment from '#public/DocumentFragment';
+import DocumentOrShadowRoot from '#mixins/DocumentOrShadowRoot';
+import { rootOf } from '#tree/Tree/relationships/parents';
+import { firstPathOf } from '#public/Event/associations/path';
+import { setGetTheParentOf } from '#public/EventTarget/associations/getTheParent';
+import { disposeAvailableToElementInternalsOf } from '#public/ShadowRoot/associations/availableToElementInternals';
+import { clonableOf, disposeClonableOf } from '#public/ShadowRoot/associations/clonable';
+import { disposeCustomElementRegistryOf } from '#public/ShadowRoot/associations/customElementRegistry';
+import { disposeDeclarativeOf } from '#public/ShadowRoot/associations/declarative';
+import { disposeDelegatesFocusOf, delegatesFocusOf } from '#public/ShadowRoot/associations/delegatesFocus';
+import { disposeHostOf, hostOf } from '#public/ShadowRoot/associations/host';
+import { disposeKeepCustomElementRegistryNullOf } from '#public/ShadowRoot/associations/keepCustomElementRegistryNull';
+import { disposeModeOf, modeOf } from '#public/ShadowRoot/associations/mode';
+import { disposeSerializableOf, serializableOf } from '#public/ShadowRoot/associations/serializable';
+import { disposeSlotAssignmentOf, slotAssignmentOf } from '#public/ShadowRoot/associations/slotAssignment';
 
 const withMixins = (prototype: ShadowRoot) =>
 	DocumentOrShadowRoot(prototype);

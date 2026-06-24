@@ -1,4 +1,4 @@
-import { type EventHandler, eventHandlerMapOf, isInternalRawUncompiledHandler } from '@/public/EventTarget/associations/eventHandlerMap';
+import { type EventHandler, eventHandlerMapOf, isInternalRawUncompiledHandler } from '#public/EventTarget/associations/eventHandlerMap';
 
 /**
  * @see https://dom.spec.whatwg.org/#default-passive-value

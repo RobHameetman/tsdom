@@ -1,5 +1,5 @@
-import { signalOf } from '@/public/AbortController/associations/signal';
-import signalAbortOn from '@/public/AbortSignal/algorithms/signalAbort';
+import { signalOf } from '#public/AbortController/associations/signal';
+import signalAbortOn from '#public/AbortSignal/algorithms/signalAbort';
 
 /**
  * @see https://dom.spec.whatwg.org/#abortcontroller-signal-abort

@@ -1,4 +1,4 @@
-import LegacyErrorConstant, { type LegacyErrorName } from '@/enums/LegacyErrorConstant';
+import LegacyErrorConstant, { type LegacyErrorName } from '#enums/LegacyErrorConstant';
 
 interface DOMExceptionState {
 	readonly message: string;

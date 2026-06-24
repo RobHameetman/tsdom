@@ -1,5 +1,5 @@
-import Namespace from '@/enums/Namespace';
-import { customElementDefinitionSetOf } from '@/public/CustomElementRegistry/associations/customElementDefinitionSet';
+import Namespace from '#enums/Namespace';
+import { customElementDefinitionSetOf } from '#public/CustomElementRegistry/associations/customElementDefinitionSet';
 
 /**
  * @see https://html.spec.whatwg.org/multipage/custom-elements.html#look-up-a-custom-element-definition

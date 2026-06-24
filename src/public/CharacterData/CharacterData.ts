@@ -1,9 +1,9 @@
-import implOf from '@/_internals/impl';
-import lengthOf from '@/tree/NodeTree/algorithms/length';
-import Node from '@/public/Node';
-import replaceData from '@/public/CharacterData/algorithms/replaceData';
-import substringData from '@/public/CharacterData/algorithms/substringData';
-import { dataOf, disposeDataOf, initializeDataOf } from '@/public/CharacterData/associations/data';
+import implOf from '#_internals/impl';
+import lengthOf from '#tree/NodeTree/algorithms/length';
+import Node from '#public/Node';
+import replaceData from '#public/CharacterData/algorithms/replaceData';
+import substringData from '#public/CharacterData/algorithms/substringData';
+import { dataOf, disposeDataOf, initializeDataOf } from '#public/CharacterData/associations/data';
 
 export const CharacterData = function(this: CharacterData) {
 	throw new TypeError('Failed to construct \'CharacterData\': Illegal constructor');

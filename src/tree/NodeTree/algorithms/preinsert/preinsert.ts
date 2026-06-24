@@ -1,5 +1,5 @@
-import Tree from '@/tree/Tree';
-import { ensurePreinsertValidity } from '@/tree/NodeTree/algorithms/ensurePreinsertValidity';
+import Tree from '#tree/Tree';
+import { ensurePreinsertValidity } from '#tree/NodeTree/algorithms/ensurePreinsertValidity';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-node-pre-insert

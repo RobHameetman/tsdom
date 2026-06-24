@@ -1,10 +1,10 @@
-import { disposeSignalOf, initializeSignalOf, signalOf } from '@/public/AbortController/associations/signal';
-import signalAbort from '@/public/AbortController/algorithms/signalAbort';
-import { initializeAbortAlgorithmsOf } from '@/public/AbortSignal/associations/abortAlgorithms';
-import { initializeAbortReasonOf } from '@/public/AbortSignal/associations/abortReason';
-import { initializeDependentOf } from '@/public/AbortSignal/associations/dependent';
-import { initializeDependentSignalsOf } from '@/public/AbortSignal/associations/dependentSignals';
-import { initializeSourceSignalsOf } from '@/public/AbortSignal/associations/sourceSignals';
+import { disposeSignalOf, initializeSignalOf, signalOf } from '#public/AbortController/associations/signal';
+import signalAbort from '#public/AbortController/algorithms/signalAbort';
+import { initializeAbortAlgorithmsOf } from '#public/AbortSignal/associations/abortAlgorithms';
+import { initializeAbortReasonOf } from '#public/AbortSignal/associations/abortReason';
+import { initializeDependentOf } from '#public/AbortSignal/associations/dependent';
+import { initializeDependentSignalsOf } from '#public/AbortSignal/associations/dependentSignals';
+import { initializeSourceSignalsOf } from '#public/AbortSignal/associations/sourceSignals';
 
 /**
  * @see https://dom.spec.whatwg.org/#dom-abortcontroller-abortcontroller

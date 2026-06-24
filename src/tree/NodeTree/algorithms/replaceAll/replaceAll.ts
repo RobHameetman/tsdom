@@ -1,4 +1,4 @@
-import List from '@/infra/List';
+import List from '#infra/List';
 import insert from '../insert';
 
 /**

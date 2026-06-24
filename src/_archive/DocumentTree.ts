@@ -1,5 +1,4 @@
-import { isType } from '@com.robhameetman/utils';
-import NodeTree from '@/tree/NodeTree';
+import NodeTree from '#tree/NodeTree';
 
 export interface DocumentTree<H extends Node = Node> extends NodeTree<Document, H> {
 	/* Mutations */

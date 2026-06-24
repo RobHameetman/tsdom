@@ -1,4 +1,4 @@
-import { isObject } from '@com.robhameetman/utils';
+import isObject from '#_internals/utils/functions/isObject';
 
 export const LinkStyle = <T extends CharacterData = CharacterData>(prototype: T) =>
 	Object.defineProperties(prototype, {

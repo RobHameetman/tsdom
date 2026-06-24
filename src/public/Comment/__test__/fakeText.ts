@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import DomNodeType from '@/nodes/enums/DomNodeType';
+import DomNodeType from '#nodes/enums/DomNodeType';
 import { fakeNode } from '../../../nodes/tree/Node/__test__';
 
 export const fakeText = ({

@@ -1,5 +1,5 @@
-import type { DOMString } from '@/webidl/DOMString';
-import type { Sequence } from '@/webidl/Sequence';
+import type { DOMString } from '#webidl/DOMString';
+import type { Sequence } from '#webidl/Sequence';
 
 export type ConnectectedCallback = () => void;
 export type DisconnectedCallback = () => void;

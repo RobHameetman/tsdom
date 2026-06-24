@@ -1,5 +1,5 @@
-import getAnAttributeByName from '@/public/Element/attributes/getAnAttributeByName';
-import remove from '@/public/Element/attributes/remove';
+import getAnAttributeByName from '#public/Element/attributes/getAnAttributeByName';
+import remove from '#public/Element/attributes/remove';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-element-attributes-remove-by-name

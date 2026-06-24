@@ -1,6 +1,6 @@
-import InvalidStateError from '@/errors/InvalidStateError';
-import { isActiveIsTrueFor, setIsActiveToTrueFor, setIsActiveToFalseFor } from '@/public/NodeIterator/associations/isActive';
-import { filterOf } from '@/public/NodeIterator/associations/filter';
+import InvalidStateError from '#errors/InvalidStateError';
+import { isActiveIsTrueFor, setIsActiveToTrueFor, setIsActiveToFalseFor } from '#public/NodeIterator/associations/isActive';
+import { filterOf } from '#public/NodeIterator/associations/filter';
 
 /**
  * Gets the root of a live {@link Range}.

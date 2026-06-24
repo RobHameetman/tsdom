@@ -1,4 +1,4 @@
-import { type NodeFilterObject, isNodeFilterCallback } from '@/public/NodeFilter';
+import { type NodeFilterObject, isNodeFilterCallback } from '#public/NodeFilter';
 
 /**
  * @see https://dom.spec.whatwg.org/#concept-traversal-filter
