@@ -1,0 +1,6 @@
+{
+  "editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.guides.indentation": false,
+	"typescript.tsdk": "node_modules/typescript/lib"
+}
