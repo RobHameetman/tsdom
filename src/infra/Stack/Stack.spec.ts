@@ -1,4 +1,4 @@
-import { jest } from '@jest/globals';
+import { rs, type Mocked } from '@rstest/core';
 import { List } from '../List';
 import { Queue } from '../Queue';
 import { Stack } from './Stack';
@@ -12,7 +12,7 @@ describe('Stack', () => {
 	});
 
 	afterAll(() => {
-		jest.restoreAllMocks();
+		rs.restoreAllMocks();
 
 		stack = null;
 	});
@@ -238,14 +238,14 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('clone()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack(1, 2, 3));
+			stack = rs.mocked(new Stack(1, 2, 3));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			stack = null;
 		});
 
@@ -321,14 +321,14 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('empty()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack(1, 2, 3, {}));
+			stack = rs.mocked(new Stack(1, 2, 3, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			stack = null;
 		});
 
@@ -359,14 +359,14 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('extend()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack(1, 2, {}));
+			stack = rs.mocked(new Stack(1, 2, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			stack = null;
 		});
 
@@ -446,14 +446,14 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('insert()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack(1, 2, {}));
+			stack = rs.mocked(new Stack(1, 2, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			stack = null;
 		});
 
@@ -503,14 +503,14 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('isEmpty()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack());
+			stack = rs.mocked(new Stack());
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			stack = null;
 		});
 
@@ -532,12 +532,12 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('peek()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 		let length: number | null = null;
 		let tail: string | null = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack('a', 'b', 'c'));
+			stack = rs.mocked(new Stack('a', 'b', 'c'));
 			tail = stack.at(stack.length - 1) as string;
 			length = stack.length;
 		});
@@ -564,12 +564,12 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('pop()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 		let length: number | null = null;
 		let tail: string | null = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack('a', 'b', 'c'));
+			stack = rs.mocked(new Stack('a', 'b', 'c'));
 			tail = stack.at(stack.length - 1) as string;
 			length = stack.length;
 		});
@@ -596,14 +596,14 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('push()', () => {
-		let emptyStack: jest.MockedObject<Stack> | null = null;
-		let stack: jest.MockedObject<Stack> | null = null;
+		let emptyStack: Mocked<Stack> | null = null;
+		let stack: Mocked<Stack> | null = null;
 		let length: number | null = null;
 		let tail: string | null = null;
 
 		beforeEach(() => {
-			emptyStack = jest.mocked(new Stack());
-			stack = jest.mocked(new Stack('a', 'b'));
+			emptyStack = rs.mocked(new Stack());
+			stack = rs.mocked(new Stack('a', 'b'));
 			length = stack.length;
 			tail = stack.at(-1) as string;
 		});
@@ -663,20 +663,20 @@ describe('Stack.prototype', () => {
 	});
 
 	describe('replace()', () => {
-		let stack: jest.MockedObject<Stack> | null = null;
-		let condition: jest.MockedFunction<(value: unknown) => boolean> | null = null;
+		let stack: Mocked<Stack> | null = null;
+		let condition: Mocked<(value: unknown) => boolean> | null = null;
 		let replacement: unknown = null;
 
 		beforeEach(() => {
-			stack = jest.mocked(new Stack());
-			condition = jest.fn();
+			stack = rs.mocked(new Stack());
+			condition = rs.fn();
 			replacement = 'd';
 
 			stack.replace(condition, replacement);
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			stack = null;
 		});
 

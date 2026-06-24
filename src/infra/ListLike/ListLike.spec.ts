@@ -1,4 +1,3 @@
-import { jest } from '@jest/globals';
 import { isListLike } from './ListLike';
 import List from '../List';
 import OrderedSet from '../OrderedSet';

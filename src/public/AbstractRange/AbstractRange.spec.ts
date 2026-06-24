@@ -1,4 +1,3 @@
-import { jest } from '@jest/globals';
 import { AbstractRange } from './AbstractRange';
 
 describe('AbstractRange', () => {

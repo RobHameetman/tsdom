@@ -20,51 +20,12 @@
 	"scripts": {
 		"format": "eslint ./src/* --ext=ts --fix",
 		"reset": "NODE_ENV=production rm -rf ./dist && npm run build -- --force",
-		"test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" NODE_ENV=testing jest -co --watch --notify"
+		"test": "NODE_ENV=testing rstest run -c ./test/config/rstest.config.ts",
+		"test:watch": "NODE_ENV=testing rstest watch -c ./test/config/rstest.config.ts"
 	},
 	"devDependencies": {
+		"@rstest/core": "^0.10.6",
 		"@types/node": "^22.19.0",
 		"typescript": "^6.0.3"
-	},
-	"jest": {
-		"roots": [
-			"<rootDir>/src",
-			"<rootDir>/test"
-		],
-		"collectCoverageFrom": [
-			"src/**/*.{ts,tsx}",
-			"!src/**/*.d.ts"
-		],
-		"coverageReporters": [
-			"text-summary"
-		],
-		"extensionsToTreatAsEsm": [
-			".ts"
-		],
-		"moduleDirectories": [
-			"node_modules",
-			"<rootDir>/../../packages"
-		],
-		"moduleFileExtensions": [
-			"js",
-			"ts"
-		],
-		"preset": "ts-jest",
-		"resolver": "<rootDir>/test/jest/config/resolver.ts",
-		"reporters": [
-			"default"
-		],
-		"testMatch": [
-			"<rootDir>/src/**/*.spec.{ts,tsx}"
-		],
-		"transform": {
-			"\\.ts$": [
-				"ts-jest",
-				{
-					"useESM": true,
-					"tsconfig": "<rootDir>/test/jest/config/tsconfig.json"
-				}
-			]
-		}
 	}
 }

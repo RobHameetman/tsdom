@@ -1,11 +1,11 @@
-import { jest } from '@jest/globals';
+import { rs, type MockInstance } from '@rstest/core';
 import overrideInNode from '#$/spies/misc/globalThisSpy';
 
 
-jest.unstable_mockModule('./associations/signal', () => ({
-	disposeSignalOf: jest.fn(),
-	initializeSignalOf: jest.fn(),
-	signalOf: jest.fn(),
+rs.mock('./associations/signal', () => ({
+	disposeSignalOf: rs.fn(),
+	initializeSignalOf: rs.fn(),
+	signalOf: rs.fn(),
 }));
 
 const { initializeSignalOf } = await import('./associations/signal');
@@ -16,7 +16,7 @@ const { default: AbortSignal } = await import('../AbortSignal');
 
 describe('new AbortController()', () => {
 	let abortController: AbortController | null = null;
-	let abortSignalConstructor: jest.SpiedClass<typeof AbortSignal> | null = null;
+	let abortSignalConstructor: MockInstance<typeof AbortSignal> | null = null;
 	// let initializeSignalOf: MockInitializeSignalOf | null = null;
 
 	beforeAll(async () => {
@@ -31,13 +31,13 @@ describe('new AbortController()', () => {
 	});
 
 	afterEach(() => {
-		jest.clearAllMocks();
+		rs.clearAllMocks();
 
 		abortController = null;
 	});
 
 	afterAll(() => {
-		jest.restoreAllMocks();
+		rs.restoreAllMocks();
 	});
 
 	it('should create a new AbortSignal', () => {
@@ -56,11 +56,11 @@ describe('AbortController', () => {
 		// overrideInNode(AbortController);
 		// overrideInNode(AbortSignal);
 
-		// jest.replaceProperty(globalThis, 'AbortController', AbortController);
-		// jest.replaceProperty(globalThis, 'AbortSignal', AbortSignal);
+		// rs.replaceProperty(globalThis, 'AbortController', AbortController);
+		// rs.replaceProperty(globalThis, 'AbortSignal', AbortSignal);
 
-		jest.spyOn(globalThis, 'AbortController').mockImplementation(AbortController);
-		// jest.spyOn(globalThis, 'AbortSignal').mockImplementation(AbortSignal);
+		rs.spyOn(globalThis, 'AbortController').mockImplementation(AbortController);
+		// rs.spyOn(globalThis, 'AbortSignal').mockImplementation(AbortSignal);
 
 		Object.defineProperty(globalThis, 'AbortSignal', {
 			value: AbortSignal,
@@ -73,13 +73,13 @@ describe('AbortController', () => {
 	});
 
 	afterEach(() => {
-		jest.clearAllMocks();
+		rs.clearAllMocks();
 
 		abortController = null;
 	});
 
 	afterAll(() => {
-		jest.restoreAllMocks();
+		rs.restoreAllMocks();
 	});
 
 	describe('.signal', () => {

@@ -1,22 +1,22 @@
-import { jest } from '@jest/globals';
+import { rs, type Mock } from '@rstest/core';
 import type { Tree } from '../../Tree';
 import mockTree from '../../__test__/mockTree';
 import roots, { addToRoots, rootsOf } from './roots';
 
 // export const getSpy = () => {
-// 	return jest.spyOn(WeakMap.prototype, 'get');
+// 	return rs.spyOn(WeakMap.prototype, 'get');
 // };
 
 // export const getMock = (value: object) => {
-// 	WeakMap.prototype.get = jest.fn(() => value);
+// 	WeakMap.prototype.get = rs.fn(() => value);
 // };
 
 describe('addToRoots()', () => {
 	let tree: Tree | null = null;
 	let otherTree: Tree | null = null;
 	let uncachedTree: Tree | null = null;
-	let createRoots: jest.Mock | null = null;
-	let treeToUse: jest.Mock | null = null;
+	let createRoots: Mock | null = null;
+	let treeToUse: Mock | null = null;
 	let rootToAdd: object | null = null;
 	let rootsToAdd: Array<object> | null = null;
 	let firstRoot: object | null = null;
@@ -33,7 +33,7 @@ describe('addToRoots()', () => {
 		roots.set(tree as Tree, []);
 		roots.set(otherTree as Tree, []);
 
-		treeToUse = jest.fn()
+		treeToUse = rs.fn()
 			.mockReturnValueOnce(tree as Tree)
 			.mockReturnValueOnce(tree as Tree)
 			.mockReturnValueOnce(tree as Tree)
@@ -49,7 +49,7 @@ describe('addToRoots()', () => {
 		fourthRoot = { id: 4 };
 		rootInOtherTree = { id: 'other' };
 
-		createRoots = jest.fn()
+		createRoots = rs.fn()
 			.mockReturnValueOnce([])
 			.mockReturnValueOnce([firstRoot])
 			.mockReturnValueOnce([secondRoot])
@@ -78,7 +78,7 @@ describe('addToRoots()', () => {
 	});
 
 	afterEach(() => {
-		jest.clearAllMocks();
+		rs.clearAllMocks();
 
 		rootToAdd = null;
 		rootsToAdd = null;

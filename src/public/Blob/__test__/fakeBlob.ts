@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 import { faker } from '@faker-js/faker';
 
 export const fakeBlob = ({
@@ -5,10 +6,10 @@ export const fakeBlob = ({
 }: Record<string, unknown> = {}) => ({
 		size: faker.number.int({ min: 0, max: 10 }),
 		type: faker.system.mimeType(),
-		arrayBuffer: jest.fn(),
-		bytes: jest.fn(),
-		slice: jest.fn(),
-		stream: jest.fn(),
-		text: jest.fn(),
+		arrayBuffer: rs.fn(),
+		bytes: rs.fn(),
+		slice: rs.fn(),
+		stream: rs.fn(),
+		text: rs.fn(),
 		...overrideProps,
 	} as unknown as Blob & Record<string, unknown>);

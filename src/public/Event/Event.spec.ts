@@ -1,14 +1,15 @@
+import { rs, type Mock } from '@rstest/core';
 import EventTarget, { isEventTarget } from './EventTarget';
 import { fakeEventTarget } from './__test__';
 
 describe('EventTarget', () => {
-	let listening: jest.Mock | null = null;
-	let notListening: jest.Mock | null = null;
+	let listening: Mock | null = null;
+	let notListening: Mock | null = null;
 	let result: EventTarget | null = null;
 
 	beforeAll(() => {
-		listening = jest.fn();
-		notListening = jest.fn();
+		listening = rs.fn();
+		notListening = rs.fn();
 	});
 
 	beforeEach(() => {

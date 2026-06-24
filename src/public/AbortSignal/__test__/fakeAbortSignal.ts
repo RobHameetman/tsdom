@@ -1,9 +1,9 @@
-import { jest } from '@jest/globals';
+import { rs } from '@rstest/core';
 import AbortSignal from '../AbortSignal';
 import EventTarget from '../../EventTarget';
 
 export const fakeAbortSignal = ({ ...overrides } = {} as Record<string, unknown>) => {
-	const abortSignal = Object.create(Object.assign(jest.mocked(AbortSignal.prototype), overrides));
+	const abortSignal = Object.create(Object.assign(rs.mocked(AbortSignal.prototype), overrides));
 
 	EventTarget.call(abortSignal);
 

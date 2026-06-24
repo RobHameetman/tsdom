@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 import { faker } from '@faker-js/faker';
 import DomNodeType from '#nodes/enums/DomNodeType';
 import { fakeEventTarget } from '#public/EventTarget/__test__';
@@ -59,13 +60,13 @@ export const fakeElement = ({
 		scrollTop,
 		shadowRoot,
 		slot,
-		attachShadow: jest.fn(),
-		checkVisibility: jest.fn(),
-		closest: jest.fn(() => null),
-		computedStyleMap: jest.fn(),
-		getAttribute: jest.fn(() => null),
-		getAttributeNS: jest.fn(() => null),
-		getAttributeNames: jest.fn(() => []),
+		attachShadow: rs.fn(),
+		checkVisibility: rs.fn(),
+		closest: rs.fn(() => null),
+		computedStyleMap: rs.fn(),
+		getAttribute: rs.fn(() => null),
+		getAttributeNS: rs.fn(() => null),
+		getAttributeNames: rs.fn(() => []),
 	});
 
 	Object.entries(overrideProps).forEach(([key, value]) => {

@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 import DomNodeType from '#nodes/enums/DomNodeType';
 import { fakeNode } from '../../Node/__test__';
 
@@ -13,12 +14,12 @@ export const fakeDocumentFragment = ({
 		nodeType: DomNodeType.DOCUMENT_FRAGMENT_NODE,
 		ownerDocument: ssr ? document : null,
 		textContent: '',
-		append: jest.fn(),
-		getElementById: jest.fn(() => null),
-		querySelector: jest.fn(() => null),
-		querySelectorAll: jest.fn(() => []),
-		prepend: jest.fn(),
-		replaceChildren: jest.fn(),
+		append: rs.fn(),
+		getElementById: rs.fn(() => null),
+		querySelector: rs.fn(() => null),
+		querySelectorAll: rs.fn(() => []),
+		prepend: rs.fn(),
+		replaceChildren: rs.fn(),
 	});
 
 	Object.entries(overrideProps).forEach(([key, value]) => {

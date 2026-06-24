@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 import { faker } from '@faker-js/faker';
 import DomNodeType from '#nodes/enums/DomNodeType';
 import { fakeNode } from '../../../nodes/tree/Node/__test__';
@@ -18,16 +19,16 @@ export const fakeText = ({
 		previousElementSibling: null,
 		textContent: content,
 		wholeText: content,
-		after: jest.fn(),
-		appendData: jest.fn(),
-		before: jest.fn(),
-		deleteData: jest.fn(),
-		insertData: jest.fn(),
-		remove: jest.fn(),
-		replaceData: jest.fn(),
-		replaceWith: jest.fn(),
-		splitText: jest.fn(() => []),
-		substringData: jest.fn(() => ''),
+		after: rs.fn(),
+		appendData: rs.fn(),
+		before: rs.fn(),
+		deleteData: rs.fn(),
+		insertData: rs.fn(),
+		remove: rs.fn(),
+		replaceData: rs.fn(),
+		replaceWith: rs.fn(),
+		splitText: rs.fn(() => []),
+		substringData: rs.fn(() => ''),
 	});
 
 	Object.entries(overrideProps).forEach(([key, value]) => {

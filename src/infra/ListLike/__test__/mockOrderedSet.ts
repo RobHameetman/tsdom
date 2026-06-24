@@ -1,7 +1,7 @@
-import { jest } from '@jest/globals';
+import { rs } from '@rstest/core';
 import { OrderedSet } from '#infra/OrderedSet';
 
 export const mockOrderedSet = <T = unknown>() =>
-	jest.mocked(new OrderedSet<T>()) as OrderedSet<T>;
+	rs.mocked(new OrderedSet<T>()) as OrderedSet<T>;
 
 export default mockOrderedSet;

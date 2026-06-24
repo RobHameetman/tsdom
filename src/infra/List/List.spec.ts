@@ -1,4 +1,4 @@
-import { jest } from '@jest/globals';
+import { rs, type Mocked } from '@rstest/core';
 import List from './List';
 import OrderedSet from '../OrderedSet';
 import Stack from '../Stack';
@@ -12,7 +12,7 @@ describe('List', () => {
 	});
 
 	afterAll(() => {
-		jest.restoreAllMocks();
+		rs.restoreAllMocks();
 
 		list = null;
 	});
@@ -232,14 +232,14 @@ describe('List.prototype', () => {
 	});
 
 	describe('append()', () => {
-		let list: jest.MockedObject<List> | null = null;
+		let list: Mocked<List> | null = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List());
+			list = rs.mocked(new List());
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 
@@ -282,14 +282,14 @@ describe('List.prototype', () => {
 	});
 
 	describe('clone()', () => {
-		let list: jest.MockedObject<List> | null = null;
+		let list: Mocked<List> | null = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List(1, 2, 3));
+			list = rs.mocked(new List(1, 2, 3));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 
@@ -365,14 +365,14 @@ describe('List.prototype', () => {
 	});
 
 	describe('empty()', () => {
-		let list: jest.MockedObject<List> | null = null;
+		let list: Mocked<List> | null = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List(1, 2, 3, {}));
+			list = rs.mocked(new List(1, 2, 3, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 
@@ -403,14 +403,14 @@ describe('List.prototype', () => {
 	});
 
 	describe('extend()', () => {
-		let list: jest.MockedObject<List> | null = null;
+		let list: Mocked<List> | null = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List(1, 2, {}));
+			list = rs.mocked(new List(1, 2, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 
@@ -490,14 +490,14 @@ describe('List.prototype', () => {
 	});
 
 	describe('insert()', () => {
-		let list: jest.MockedObject<List> | null = null;
+		let list: Mocked<List> | null = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List(1, 2, {}));
+			list = rs.mocked(new List(1, 2, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 
@@ -565,14 +565,14 @@ describe('List.prototype', () => {
 	});
 
 	describe('prepend()', () => {
-		let list: jest.MockedObject<List> | null = null;
+		let list: Mocked<List> | null = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List());
+			list = rs.mocked(new List());
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 
@@ -619,18 +619,18 @@ describe('List.prototype', () => {
 	});
 
 	describe('remove()', () => {
-		let list: jest.MockedObject<List> | null = null;
-		let condition: jest.MockedFunction<(value: unknown) => boolean> | null = null;
+		let list: Mocked<List> | null = null;
+		let condition: Mocked<(value: unknown) => boolean> | null = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List());
-			condition = jest.fn();
+			list = rs.mocked(new List());
+			condition = rs.fn();
 
 			list.remove(condition);
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 
@@ -678,20 +678,20 @@ describe('List.prototype', () => {
 	});
 
 	describe('replace()', () => {
-		let list: jest.MockedObject<List> | null = null;
-		let condition: jest.MockedFunction<(value: unknown) => boolean> | null = null;
+		let list: Mocked<List> | null = null;
+		let condition: Mocked<(value: unknown) => boolean> | null = null;
 		let replacement: unknown = null;
 
 		beforeEach(() => {
-			list = jest.mocked(new List());
-			condition = jest.fn();
+			list = rs.mocked(new List());
+			condition = rs.fn();
 			replacement = 'd';
 
 			list.replace(condition, replacement);
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			list = null;
 		});
 

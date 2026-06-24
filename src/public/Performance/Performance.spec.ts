@@ -1,14 +1,15 @@
+import { rs, type Mock } from '@rstest/core';
 import CustomEvent, { isCustomEvent } from './Performance';
 // import { fakeCustomEvent } from './__test__';
 
 describe('CustomEvent', () => {
-	let listening: jest.Mock | null = null;
-	let notListening: jest.Mock | null = null;
+	let listening: Mock | null = null;
+	let notListening: Mock | null = null;
 	let result: CustomEvent | null = null;
 
 	beforeAll(() => {
-		listening = jest.fn();
-		notListening = jest.fn();
+		listening = rs.fn();
+		notListening = rs.fn();
 	});
 
 	beforeEach(() => {

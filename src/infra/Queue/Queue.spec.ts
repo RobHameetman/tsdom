@@ -1,4 +1,4 @@
-import { jest } from '@jest/globals';
+import { rs, type Mocked } from '@rstest/core';
 import Queue from './Queue';
 import List from '../List';
 import OrderedSet from '../OrderedSet';
@@ -12,7 +12,7 @@ describe('Queue', () => {
 	});
 
 	afterAll(() => {
-		jest.restoreAllMocks();
+		rs.restoreAllMocks();
 
 		queue = null;
 	});
@@ -234,14 +234,14 @@ describe('Queue.prototype', () => {
 	});
 
 	describe('clone()', () => {
-		let queue: jest.MockedObject<Queue> | null = null;
+		let queue: Mocked<Queue> | null = null;
 
 		beforeEach(() => {
-			queue = jest.mocked(new Queue(1, 2, 3));
+			queue = rs.mocked(new Queue(1, 2, 3));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			queue = null;
 		});
 
@@ -317,12 +317,12 @@ describe('Queue.prototype', () => {
 	});
 
 	describe('dequeue()', () => {
-		let queue: jest.MockedObject<Queue> | null = null;
+		let queue: Mocked<Queue> | null = null;
 		let head: string | null = null;
 		let length: number | null = null;
 
 		beforeEach(() => {
-			queue = jest.mocked(new Queue('a', 'b', 'c'));
+			queue = rs.mocked(new Queue('a', 'b', 'c'));
 			head = queue.at(0) as string;
 			length = queue.length;
 		});
@@ -349,14 +349,14 @@ describe('Queue.prototype', () => {
 	});
 
 	describe('empty()', () => {
-		let queue: jest.MockedObject<Queue> | null = null;
+		let queue: Mocked<Queue> | null = null;
 
 		beforeEach(() => {
-			queue = jest.mocked(new Queue(1, 2, 3, {}));
+			queue = rs.mocked(new Queue(1, 2, 3, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			queue = null;
 		});
 
@@ -387,14 +387,14 @@ describe('Queue.prototype', () => {
 	});
 
 	describe('enqueue()', () => {
-		let queue: jest.MockedObject<Queue> | null = null;
+		let queue: Mocked<Queue> | null = null;
 
 		beforeEach(() => {
-			queue = jest.mocked(new Queue());
+			queue = rs.mocked(new Queue());
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			queue = null;
 		});
 
@@ -437,14 +437,14 @@ describe('Queue.prototype', () => {
 	});
 
 	describe('extend()', () => {
-		let queue: jest.MockedObject<Queue> | null = null;
+		let queue: Mocked<Queue> | null = null;
 
 		beforeEach(() => {
-			queue = jest.mocked(new Queue(1, 2, {}));
+			queue = rs.mocked(new Queue(1, 2, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			queue = null;
 		});
 
@@ -524,14 +524,14 @@ describe('Queue.prototype', () => {
 	});
 
 	describe('insert()', () => {
-		let queue: jest.MockedObject<Queue> | null = null;
+		let queue: Mocked<Queue> | null = null;
 
 		beforeEach(() => {
-			queue = jest.mocked(new Queue(1, 2, {}));
+			queue = rs.mocked(new Queue(1, 2, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			queue = null;
 		});
 
@@ -599,20 +599,20 @@ describe('Queue.prototype', () => {
 	});
 
 	describe('replace()', () => {
-		let queue: jest.MockedObject<Queue> | null = null;
-		let condition: jest.MockedFunction<(value: unknown) => boolean> | null = null;
+		let queue: Mocked<Queue> | null = null;
+		let condition: Mocked<(value: unknown) => boolean> | null = null;
 		let replacement: unknown = null;
 
 		beforeEach(() => {
-			queue = jest.mocked(new Queue());
-			condition = jest.fn();
+			queue = rs.mocked(new Queue());
+			condition = rs.fn();
 			replacement = 'd';
 
 			queue.replace(condition, replacement);
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			queue = null;
 		});
 

@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 import { faker } from '@faker-js/faker';
 import { DomNodeType, type DomNodeTypes } from '#enums/DomNodeType';
 import { randomDomNodeType } from '#enums/DomNodeType/__test__';
@@ -120,118 +121,118 @@ export const fakeNode = ({
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.appendChild(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.appendChild(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'cloneNode', {
 		writable: false,
 		value: !ssr
-			? jest.fn((...args) => Node.prototype.cloneNode(...args))
-			: jest.fn(),
+			? rs.fn((...args) => Node.prototype.cloneNode(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'compareDocumentPosition', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.compareDocumentPosition(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.compareDocumentPosition(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'contains', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.contains(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.contains(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'getRootNode', {
 		writable: false,
 		value: !ssr
-			? jest.fn((...args) => Node.prototype.getRootNode(...args))
-			: jest.fn(),
+			? rs.fn((...args) => Node.prototype.getRootNode(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'hasChildNodes', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.hasChildNodes(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.hasChildNodes(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'insertBefore', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.insertBefore(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.insertBefore(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'isDefaultNamespace', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.isDefaultNamespace(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.isDefaultNamespace(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'isEqualNode', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.isEqualNode(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.isEqualNode(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'isSameNode', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.isSameNode(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.isSameNode(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'lookupNamespaceURI', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.lookupNamespaceURI(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.lookupNamespaceURI(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'lookupPrefix', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.lookupPrefix(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.lookupPrefix(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'normalize', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.normalize(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.normalize(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'removeChild', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.removeChild(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.removeChild(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(node, 'replaceChild', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => Node.prototype.replaceChild(...args))
-			: jest.fn(),
+			  rs.fn((...args) => Node.prototype.replaceChild(...args))
+			: rs.fn(),
 	});
 
 	Object.entries(overrideProps).forEach(([key, value]) => {

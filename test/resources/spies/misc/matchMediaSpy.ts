@@ -1,22 +1,23 @@
+import { rs } from '@rstest/core';
 const DEFAULT_CRITERIA = (_query: string) => false;
 
 export const matchMediaSpy = (criteria = DEFAULT_CRITERIA) =>
 	Object.defineProperty(window, 'matchMedia', {
 		writable: true,
-		value: jest.fn().mockImplementation((query) => ({
+		value: rs.fn().mockImplementation((query) => ({
 			matches: criteria(query),
 			media: query,
 			onchange: null,
-			addEventListener: jest.fn(),
-			removeEventListener: jest.fn(),
-			dispatchEvent: jest.fn(),
+			addEventListener: rs.fn(),
+			removeEventListener: rs.fn(),
+			dispatchEvent: rs.fn(),
 			/**
 			 * @deprecated
 			 */
-			addListener: jest.fn(),
+			addListener: rs.fn(),
 			/**
 			 * @deprecated
 			 */
-			removeListener: jest.fn(),
+			removeListener: rs.fn(),
 		})),
 	});

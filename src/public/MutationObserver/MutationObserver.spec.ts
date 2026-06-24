@@ -1,4 +1,3 @@
-import { jest } from '@jest/globals';
 import { MutationObserver } from './MutationObserver';
 
 describe('MutationObserver', () => {

@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 export const fakeNodeList = ({
 	ssr = typeof window === 'undefined',
 	nodes = [],
@@ -31,16 +32,16 @@ export const fakeNodeList = ({
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => NodeList.prototype.entries(...args))
-			: jest.fn(() => Object.entries(_nodes)),
+			  rs.fn((...args) => NodeList.prototype.entries(...args))
+			: rs.fn(() => Object.entries(_nodes)),
 	});
 
 	Object.defineProperty(nodeList, 'forEach', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => NodeList.prototype.forEach(...args))
-			: jest.fn(
+			  rs.fn((...args) => NodeList.prototype.forEach(...args))
+			: rs.fn(
 					(
 						callback: (
 							node: Node,
@@ -55,24 +56,24 @@ export const fakeNodeList = ({
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => NodeList.prototype.item(...args))
-			: jest.fn((index: number) => _nodes.at(index)),
+			  rs.fn((...args) => NodeList.prototype.item(...args))
+			: rs.fn((index: number) => _nodes.at(index)),
 	});
 
 	Object.defineProperty(nodeList, 'keys', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => NodeList.prototype.keys(...args))
-			: jest.fn(() => Object.keys(_nodes)),
+			  rs.fn((...args) => NodeList.prototype.keys(...args))
+			: rs.fn(() => Object.keys(_nodes)),
 	});
 
 	Object.defineProperty(nodeList, 'values', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => NodeList.prototype.values(...args))
-			: jest.fn(() => Object.values(_nodes)),
+			  rs.fn((...args) => NodeList.prototype.values(...args))
+			: rs.fn(() => Object.values(_nodes)),
 	});
 
 	Object.entries(overrideProps).forEach(([key, value]) => {

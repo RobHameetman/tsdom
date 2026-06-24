@@ -1,4 +1,3 @@
-import { jest } from '@jest/globals';
 import { Tree } from './Tree';
 // import mockTree from '../../__test__/mockTree';
 // import roots, { addToRoots, rootsOf } from './roots';

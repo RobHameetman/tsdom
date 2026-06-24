@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 export const fakeEventTarget = ({
 	ssr = typeof window !== 'undefined',
 	...overrideProps
@@ -8,24 +9,24 @@ export const fakeEventTarget = ({
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => EventTarget.prototype.addEventListener(...args))
-			: jest.fn(),
+			  rs.fn((...args) => EventTarget.prototype.addEventListener(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(eventTarget, 'dispatchEvent', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => EventTarget.prototype.dispatchEvent(...args))
-			: jest.fn(),
+			  rs.fn((...args) => EventTarget.prototype.dispatchEvent(...args))
+			: rs.fn(),
 	});
 
 	Object.defineProperty(eventTarget, 'removeEventListener', {
 		writable: false,
 		value: !ssr
 			? /* @ts-expect-error - A spread argument must either have a tuple type or be passed to a rest parameter. */
-			  jest.fn((...args) => EventTarget.prototype.removeEventListener(...args))
-			: jest.fn(),
+			  rs.fn((...args) => EventTarget.prototype.removeEventListener(...args))
+			: rs.fn(),
 	});
 
 	Object.entries(overrideProps).forEach(([key, value]) => {

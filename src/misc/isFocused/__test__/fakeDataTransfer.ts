@@ -1,3 +1,4 @@
+import { rs } from '@rstest/core';
 import { faker } from '@faker-js/faker';
 import { fakeFileList } from '#dom/files/isFileList/__test__';
 import { fakeDataTransferItemList } from '#dom/misc/isDataTransferItemList/__test__';
@@ -29,9 +30,9 @@ export const fakeDataTransfer = ({
 		files: fakeFileList(),
 		items: fakeDataTransferItemList(),
 		types: faker.helpers.arrayElements(['text/plain', 'text/html', 'text/uri-list']),
-		clearData: jest.fn(),
-		getData: jest.fn(),
-		setData: jest.fn(),
-		setDragImage: jest.fn(),
+		clearData: rs.fn(),
+		getData: rs.fn(),
+		setData: rs.fn(),
+		setDragImage: rs.fn(),
 		...overrideProps,
 	} as DataTransfer & Record<string, unknown>);

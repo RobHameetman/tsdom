@@ -1,4 +1,4 @@
-import { jest } from '@jest/globals';
+import { rs, type Mocked } from '@rstest/core';
 import { OrderedSet } from './OrderedSet';
 import { List } from '../List';
 import { Queue } from '../Queue';
@@ -12,7 +12,7 @@ describe('OrderedSet', () => {
 	});
 
 	afterAll(() => {
-		jest.restoreAllMocks();
+		rs.restoreAllMocks();
 
 		set = null;
 	});
@@ -239,14 +239,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('append()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(OrderedSet.of());
+			set = rs.mocked(OrderedSet.of());
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -289,14 +289,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('clone()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(OrderedSet.of(1, 2, 3));
+			set = rs.mocked(OrderedSet.of(1, 2, 3));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -406,14 +406,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('empty()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(OrderedSet.of<unknown>(1, 2, 3, {}));
+			set = rs.mocked(OrderedSet.of<unknown>(1, 2, 3, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -444,14 +444,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('extend()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(new OrderedSet(1, 2, {}));
+			set = rs.mocked(new OrderedSet(1, 2, {}));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -508,20 +508,20 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('equals()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
-		let equalSet: jest.MockedObject<OrderedSet> | null = null;
-		let subset: jest.MockedObject<OrderedSet> | null = null;
-		let superset: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
+		let equalSet: Mocked<OrderedSet> | null = null;
+		let subset: Mocked<OrderedSet> | null = null;
+		let superset: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(OrderedSet.of(1, 2, 3));
-			equalSet = jest.mocked(OrderedSet.of(1, 2, 3));
-			subset = jest.mocked(OrderedSet.of(1, 2));
-			superset = jest.mocked(OrderedSet.of(1, 2, 3, 4));
+			set = rs.mocked(OrderedSet.of(1, 2, 3));
+			equalSet = rs.mocked(OrderedSet.of(1, 2, 3));
+			subset = rs.mocked(OrderedSet.of(1, 2));
+			superset = rs.mocked(OrderedSet.of(1, 2, 3, 4));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 			equalSet = null;
 			subset = null;
@@ -589,14 +589,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('insert()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(OrderedSet.of(1, 2, 3));
+			set = rs.mocked(OrderedSet.of(1, 2, 3));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -712,12 +712,12 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('pop()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 		let length: number | null = null;
 		let tail: string | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(new OrderedSet('a', 'b', 'c'));
+			set = rs.mocked(new OrderedSet('a', 'b', 'c'));
 			tail = set.at(-1) as string;
 			length = set.length;
 		});
@@ -744,14 +744,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('prepend()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(new OrderedSet());
+			set = rs.mocked(new OrderedSet());
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -798,14 +798,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('push()', () => {
-		let emptySet: jest.MockedObject<OrderedSet> | null = null;
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let emptySet: Mocked<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 		let length: number | null = null;
 		let tail: string | null = null;
 
 		beforeEach(() => {
-			emptySet = jest.mocked(new OrderedSet());
-			set = jest.mocked(new OrderedSet('a', 'b'));
+			emptySet = rs.mocked(new OrderedSet());
+			set = rs.mocked(new OrderedSet('a', 'b'));
 			length = set.length;
 			tail = set.at(-1) as string;
 		});
@@ -865,20 +865,20 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('replace()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
-		let condition: jest.MockedFunction<(value: unknown) => boolean> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
+		let condition: Mocked<(value: unknown) => boolean> | null = null;
 		let replacement: unknown = null;
 
 		beforeEach(() => {
-			set = jest.mocked(new OrderedSet());
-			condition = jest.fn();
+			set = rs.mocked(new OrderedSet());
+			condition = rs.fn();
 			replacement = 'd';
 
 			set.replace(condition, replacement);
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -928,18 +928,18 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('remove()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
-		let condition: jest.MockedFunction<(value: unknown) => boolean> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
+		let condition: Mocked<(value: unknown) => boolean> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(OrderedSet.of());
-			condition = jest.fn(() => false);
+			set = rs.mocked(OrderedSet.of());
+			condition = rs.fn(() => false);
 
 			set.remove(condition);
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -982,14 +982,14 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('reverse()', () => {
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(new OrderedSet(1, 2, 3));
+			set = rs.mocked(new OrderedSet(1, 2, 3));
 		});
 
 		afterEach(() => {
-			jest.restoreAllMocks();
+			rs.restoreAllMocks();
 			set = null;
 		});
 
@@ -1008,13 +1008,13 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('shift()', () => {
-		let emptySet: jest.MockedObject<OrderedSet> | null = null;
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let emptySet: Mocked<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 		let firstItem: number | null = null;
 
 		beforeEach(() => {
-			emptySet = jest.mocked(new OrderedSet());
-			set = jest.mocked(new OrderedSet(1, 2, 3));
+			emptySet = rs.mocked(new OrderedSet());
+			set = rs.mocked(new OrderedSet(1, 2, 3));
 			firstItem = set.at(0) as number;
 		});
 
@@ -1040,12 +1040,12 @@ describe('OrderedSet.prototype', () => {
 	});
 
 	describe('sort()', () => {
-		let compare: jest.MockedFunction<(a: unknown, b: unknown) => number> | null = null;
-		let emptySet: jest.MockedObject<OrderedSet> | null = null;
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let compare: Mocked<(a: unknown, b: unknown) => number> | null = null;
+		let emptySet: Mocked<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			compare = jest.fn(<T = unknown>(a: T, b: T) => {
+			compare = rs.fn(<T = unknown>(a: T, b: T) => {
 				if (a < b) {
 					return -1;
 				}
@@ -1057,12 +1057,12 @@ describe('OrderedSet.prototype', () => {
 				return 0;
 			});
 
-			emptySet = jest.mocked(new OrderedSet());
-			set = jest.mocked(new OrderedSet(3, 1, 2));
+			emptySet = rs.mocked(new OrderedSet());
+			set = rs.mocked(new OrderedSet(3, 1, 2));
 		});
 
 		afterEach(() => {
-			jest.resetAllMocks();
+			rs.resetAllMocks();
 			compare = null;
 			emptySet = null;
 			set = null;
@@ -1090,14 +1090,14 @@ describe('OrderedSet.prototype', () => {
 
 	describe('splice()', () => {
 		describe('when the set is not empty', () => {
-			let set: jest.MockedObject<OrderedSet> | null = null;
+			let set: Mocked<OrderedSet> | null = null;
 
 			beforeEach(() => {
-				set = jest.mocked(new OrderedSet(3, 1, 2));
+				set = rs.mocked(new OrderedSet(3, 1, 2));
 			});
 
 			afterEach(() => {
-				jest.resetAllMocks();
+				rs.resetAllMocks();
 				set = null;
 			});
 
@@ -1162,14 +1162,14 @@ describe('OrderedSet.prototype', () => {
 		});
 
 		describe('when the set is empty', () => {
-			let set: jest.MockedObject<OrderedSet> | null = null;
+			let set: Mocked<OrderedSet> | null = null;
 
 			beforeEach(() => {
-				set = jest.mocked(new OrderedSet());
+				set = rs.mocked(new OrderedSet());
 			});
 
 			afterEach(() => {
-				jest.resetAllMocks();
+				rs.resetAllMocks();
 				set = null;
 			});
 
@@ -1232,15 +1232,15 @@ describe('OrderedSet.prototype', () => {
 
 	describe('unshift()', () => {
 		let length: number | null = null;
-		let set: jest.MockedObject<OrderedSet> | null = null;
+		let set: Mocked<OrderedSet> | null = null;
 
 		beforeEach(() => {
-			set = jest.mocked(new OrderedSet());
+			set = rs.mocked(new OrderedSet());
 			({ length } = set);
 		});
 
 		afterEach(() => {
-			jest.resetAllMocks();
+			rs.resetAllMocks();
 			length = null;
 			set = null;
 		});
